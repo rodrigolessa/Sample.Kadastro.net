@@ -9,6 +9,23 @@
 </head>
 
 <body>
-    @RenderBody()
+
+    <div id="page">
+
+        <div id="menucontainer">
+            <ul id="menu">
+                <li>@Html.ActionLink("Cadastro", "Index", "Pessoa")</li>
+                <li>@Html.ActionLink("Principal", "Index", "Home")</li>
+            </ul>
+        </div>
+
+        <div id="main">
+            @RenderBody()
+        </div>
+
+        <div id="footer">
+        </div>
+    </div>
+
 </body>
 </html>

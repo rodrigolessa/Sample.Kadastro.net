@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using Sample.MVCadastro_net.UI.Web.Models;
 using Sample.MVCadastro_net.UI.Web.Enum;
+using Sample.MVCadastro_net.UI.Web.Extension;
 
 namespace Sample.MVCadastro_net.UI.Web.ViewModels
 {

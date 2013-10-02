@@ -3,4 +3,51 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+	<div id="container-topo" class="container-fluid container-topo">
+
+		<div class="row-fluid">
+
+			<div class="span12">
+
+				<form accept-charset="UTF-8" id="contatoForm" method="post" class="form-horizontal container-narrow">
+
+				<fieldset>
+
+				<legend><h2>Controle Manual de Ponto</h2></legend>
+
+					<div class="row-fluid">
+
+						<div class="span6">
+
+							<span>HOJE</span>
+
+							<div class="control-group">
+								<label for="entrada">Entrada:</label>
+								<input id="entrada" data-bind="value: Entrada" type="text" placeholder="Hora de entrada na empresa" class="input-block-level">
+							</div>
+
+							<div class="control-group">
+								<label for="saida">Saída:</label>
+								<input id="saida" data-bind="value: Saida" type="text" placeholder="Hora de saída da empresa" class="input-block-level">
+							</div>
+
+					        <div class="control-group">
+						        <button type="submit" data-bind="click: Salvar" class="btn btn-large btn-primary">Cadastrar</button>
+					        </div>
+
+						</div>
+
+					</div>
+
+				</fieldset>
+
+				</form>
+
+			</div>
+			<!--/span-->
+
+		</div>
+		<!--/row-->
+
+	</div>
+	<!--/.fluid-container-->

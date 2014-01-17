@@ -91,12 +91,6 @@
     <Folder Include="ProfileMapper\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sample.Kadastro.UI.Web.Model\Sample.Kadastro.UI.Web.Model.csproj">
-      <Project>{5AD3C86F-0D8F-4051-944C-DB868849B257}</Project>
-      <Name>Sample.Kadastro.UI.Web.Model</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>

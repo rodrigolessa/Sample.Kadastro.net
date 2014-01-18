@@ -47,18 +47,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\intervalo.cs" />
-    <Compile Include="Models\kadastroContext.cs" />
-    <Compile Include="Models\Mapping\intervaloMap.cs" />
-    <Compile Include="Models\Mapping\pontoMap.cs" />
-    <Compile Include="Models\Mapping\usuarioMap.cs" />
-    <Compile Include="Models\ponto.cs" />
-    <Compile Include="Models\usuario.cs" />
+    <Compile Include="Entities\EntityBase.cs" />
+    <Compile Include="Entities\Enum\PerfilAcesso.cs" />
+    <Compile Include="Entities\Intervalo.cs" />
+    <Compile Include="Entities\Ponto.cs" />
+    <Compile Include="Entities\Usuario.cs" />
+    <Compile Include="Entities\Usuario.Partial.cs" />
+    <Compile Include="Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Messages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+    <Folder Include="Services\" />
+    <Folder Include="Specifications\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

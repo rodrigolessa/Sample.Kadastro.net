@@ -3,58 +3,58 @@ GO
 
 /*	Trecho de Rollback do script:
 
-DROP TABLE [kadastro].[dbo].[intervalo];
+DROP TABLE [kadastro].[dbo].[Intervalo];
 GO
-DROP TABLE [kadastro].[dbo].[ponto];
+DROP TABLE [kadastro].[dbo].[Ponto];
 GO
-DROP TABLE [kadastro].[dbo].[usuario];
+DROP TABLE [kadastro].[dbo].[Usuario];
 GO
 
-SELECT * FROM [dbo].[usuario];
-SELECT * FROM [dbo].[ponto];
-SELECT * FROM [dbo].[intervalo];
+SELECT * FROM [dbo].[Usuario];
+SELECT * FROM [dbo].[Ponto];
+SELECT * FROM [dbo].[Intervalo];
 
 */
 
-CREATE TABLE [dbo].[usuario](
-	[id] [int] IDENTITY(1,1) NOT NULL,
-	[login] [varchar](50) NOT NULL,
-	[senha] [varchar](50) NOT NULL,
-	[email] [varchar](100) NULL,
-	[status] [char](1) NULL
+CREATE TABLE [dbo].[Usuario](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Login] [varchar](50) NOT NULL,
+	[Senha] [varchar](50) NOT NULL,
+	[Email] [varchar](100) NULL,
+	[Status] [char](1) NULL
 )
 GO
 
-CREATE TABLE [dbo].[ponto](
-	[id] [int] IDENTITY(1,1) NOT NULL,
-	[idUsuario] [int] NOT NULL,
-	[dia] [smalldatetime] NOT NULL,
-	[horas] [time](7) NULL
+CREATE TABLE [dbo].[Ponto](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[IdUsuario] [int] NOT NULL,
+	[Dia] [smalldatetime] NOT NULL,
+	[Horas] [time](7) NULL
 )
 GO
 
-CREATE TABLE [dbo].[intervalo](
-	[id] [bigint] IDENTITY(1,1) NOT NULL,
-	[idPonto] [int] NOT NULL,
-	[entrada] [time](7) NULL,
-	[saida] [time](7) NULL
+CREATE TABLE [dbo].[Intervalo](
+	[Id] [bigint] IDENTITY(1,1) NOT NULL,
+	[IdPonto] [int] NOT NULL,
+	[Entrada] [time](7) NULL,
+	[Saida] [time](7) NULL
 )
 GO
 
-ALTER TABLE [dbo].[usuario] ADD CONSTRAINT [PK_usuario] PRIMARY KEY CLUSTERED ([id] ASC)
+ALTER TABLE [dbo].[Usuario] ADD CONSTRAINT [PK_Usuario] PRIMARY KEY CLUSTERED ([Id] ASC)
 GO
 
-ALTER TABLE [dbo].[ponto] ADD CONSTRAINT [PK_ponto] PRIMARY KEY CLUSTERED ([id] ASC)
+ALTER TABLE [dbo].[Ponto] ADD CONSTRAINT [PK_Ponto] PRIMARY KEY CLUSTERED ([Id] ASC)
 GO
 
-ALTER TABLE [dbo].[ponto] ADD CONSTRAINT [FK_ponto_usuario] FOREIGN KEY([idUsuario]) REFERENCES [dbo].[usuario] ([id])
+ALTER TABLE [dbo].[Ponto] ADD CONSTRAINT [FK_Ponto_Usuario] FOREIGN KEY([IdUsuario]) REFERENCES [dbo].[Usuario] ([Id])
 GO
 
-ALTER TABLE [dbo].[intervalo] ADD CONSTRAINT [PK_intervalo] PRIMARY KEY CLUSTERED ([id] ASC)
+ALTER TABLE [dbo].[Intervalo] ADD CONSTRAINT [PK_Intervalo] PRIMARY KEY CLUSTERED ([Id] ASC)
 GO
 
-ALTER TABLE [dbo].[intervalo]  WITH NOCHECK ADD  CONSTRAINT [FK_intervalo_ponto] FOREIGN KEY([idPonto]) REFERENCES [dbo].[ponto] ([id])
+ALTER TABLE [dbo].[Intervalo]  WITH NOCHECK ADD  CONSTRAINT [FK_Intervalo_Ponto] FOREIGN KEY([IdPonto]) REFERENCES [dbo].[Ponto] ([Id])
 GO
 
-ALTER TABLE [dbo].[intervalo] CHECK CONSTRAINT [FK_intervalo_ponto]
+ALTER TABLE [dbo].[Intervalo] CHECK CONSTRAINT [FK_Intervalo_Ponto]
 GO

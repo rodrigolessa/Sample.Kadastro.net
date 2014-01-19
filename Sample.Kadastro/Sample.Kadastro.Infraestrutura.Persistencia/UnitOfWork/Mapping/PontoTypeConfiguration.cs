@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
+using Sample.Kadastro.Dominio.Entities;
 
 namespace Sample.Kadastro.Infraestrutura.Persistencia.UnitOfWork.Mapping
 {
-    public class PontoTypeConfiguration
+    public class PontoTypeConfiguration : EntityTypeConfiguration<Ponto>
     {
         public PontoTypeConfiguration()
         {

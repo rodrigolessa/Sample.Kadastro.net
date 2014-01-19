@@ -1,6 +1,7 @@
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
-using Sample.Kadastro.Infraestrutura.Persistencia.Models.Mapping;
+using Sample.Kadastro.Infraestrutura.Persistencia.UnitOfWork.Mapping;
+using Sample.Kadastro.Dominio.Entities;
 
 namespace Sample.Kadastro.Infraestrutura.Persistencia.Models
 {
@@ -22,9 +23,9 @@ namespace Sample.Kadastro.Infraestrutura.Persistencia.Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Configurations.Add(new IntervaloMap());
-            modelBuilder.Configurations.Add(new PontoMap());
-            modelBuilder.Configurations.Add(new UsuarioMap());
+            modelBuilder.Configurations.Add(new IntervaloTypeConfiguration());
+            modelBuilder.Configurations.Add(new PontoTypeConfiguration());
+            modelBuilder.Configurations.Add(new UsuarioTypeConfiguration());
         }
     }
 }

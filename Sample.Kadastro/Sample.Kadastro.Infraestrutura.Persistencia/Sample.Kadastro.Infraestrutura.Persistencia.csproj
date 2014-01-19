@@ -48,14 +48,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\kadastroContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IntervaloRepository.cs" />
+    <Compile Include="Repositories\PontoRepository.cs" />
+    <Compile Include="Repositories\UsuarioRepository.cs" />
+    <Compile Include="UnitOfWork\MainUnitOfWork.cs" />
     <Compile Include="UnitOfWork\Mapping\IntervaloTypeConfiguration.cs" />
     <Compile Include="UnitOfWork\Mapping\PontoTypeConfiguration.cs" />
     <Compile Include="UnitOfWork\Mapping\UsuarioTypeConfiguration.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -66,7 +71,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="Repositories\" />
     <Folder Include="ServiceAgent\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

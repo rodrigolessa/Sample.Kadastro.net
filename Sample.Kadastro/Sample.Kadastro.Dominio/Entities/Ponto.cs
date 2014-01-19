@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Sample.Kadastro.Dominio.Entities
 {
-    public partial class Ponto
+    public partial class Ponto : EntityBase
     {
         public Ponto()
         {

@@ -9,7 +9,7 @@ namespace Sample.Kadastro.Dominio.Entities
 {
     public partial class Usuario : EntityBase, IValidatableObject
     {
-        public virtual PerfilAcesso? PerfilAcesso { get; set; }
+        //public virtual PerfilAcesso? PerfilAcesso { get; set; }
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
@@ -21,8 +21,8 @@ namespace Sample.Kadastro.Dominio.Entities
             if (string.IsNullOrWhiteSpace(this.Senha))
                 validationResults.Add(new ValidationResult(Messages.ValidationUsuarioSenhaNaoPodeSerNulo));
 
-            if (!this.PerfilAcesso.HasValue)
-                validationResults.Add(new ValidationResult(Messages.ValidationUsuarioPerfilAcessoNaoPodeSerNulo));
+            //if (!this.PerfilAcesso.HasValue)
+            //validationResults.Add(new ValidationResult(Messages.ValidationUsuarioPerfilAcessoNaoPodeSerNulo));
 
             return validationResults;
         }

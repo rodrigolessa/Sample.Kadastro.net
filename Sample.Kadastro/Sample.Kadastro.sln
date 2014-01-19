@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Kadastro.UI.Web.Cont
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Kadastro.Infraestrutura.Persistencia.Teste", "Sample.Kadastro.Infraestrutura.Persistencia.Teste\Sample.Kadastro.Infraestrutura.Persistencia.Teste.csproj", "{DFD6E5DF-50E8-48E6-9317-BDE8203F7E53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Kadastro.Dominio.Teste", "Sample.Kadastro.Dominio.Teste\Sample.Kadastro.Dominio.Teste.csproj", "{8E471B9F-B0DC-4070-A1B7-18EAEEE32BC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Kadastro.Aplicacao.Teste", "Sample.Kadastro.Aplicacao.Teste\Sample.Kadastro.Aplicacao.Teste.csproj", "{F57680B6-C454-411A-8C85-0D3E4BACD429}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = Sample.Kadastro.vsmdi
@@ -84,6 +88,14 @@ Global
 		{DFD6E5DF-50E8-48E6-9317-BDE8203F7E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFD6E5DF-50E8-48E6-9317-BDE8203F7E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFD6E5DF-50E8-48E6-9317-BDE8203F7E53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E471B9F-B0DC-4070-A1B7-18EAEEE32BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E471B9F-B0DC-4070-A1B7-18EAEEE32BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E471B9F-B0DC-4070-A1B7-18EAEEE32BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E471B9F-B0DC-4070-A1B7-18EAEEE32BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F57680B6-C454-411A-8C85-0D3E4BACD429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F57680B6-C454-411A-8C85-0D3E4BACD429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F57680B6-C454-411A-8C85-0D3E4BACD429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F57680B6-C454-411A-8C85-0D3E4BACD429}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +118,8 @@ Global
 		{8D944634-1691-46F0-BC1B-27596B756897} = {91BAD9B5-6D8F-4523-B2DD-3692963F5EA2}
 		{BCEC52F0-4988-4C84-896B-C6A36A3C89D6} = {91BAD9B5-6D8F-4523-B2DD-3692963F5EA2}
 		{DFD6E5DF-50E8-48E6-9317-BDE8203F7E53} = {22D6B85E-4E0E-4296-941C-12AFF252D927}
+		{8E471B9F-B0DC-4070-A1B7-18EAEEE32BC6} = {22D6B85E-4E0E-4296-941C-12AFF252D927}
+		{F57680B6-C454-411A-8C85-0D3E4BACD429} = {22D6B85E-4E0E-4296-941C-12AFF252D927}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35

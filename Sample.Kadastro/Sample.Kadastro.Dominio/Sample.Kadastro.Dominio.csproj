@@ -67,6 +67,8 @@
     <Compile Include="Repositories\IPontoRepository.cs" />
     <Compile Include="Repositories\IUsuarioRepository.cs" />
     <Compile Include="Repository.cs" />
+    <Compile Include="Services\IUsuarioService.cs" />
+    <Compile Include="Services\UsuarioService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -79,7 +81,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Services\" />
     <Folder Include="Specifications\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -43,6 +43,7 @@ namespace Sample.Kadastro.Dominio
         {
             if (item != (TEntity)null)
                 GetSet().Add(item);
+            //TODO: Gravar loggerFactory
         }
 
         public virtual void Remove(TEntity item)
@@ -53,18 +54,21 @@ namespace Sample.Kadastro.Dominio
 
                 GetSet().Remove(item);
             }
+            //TODO: Gravar loggerFactory
         }
 
         public virtual void Modify(TEntity item)
         {
             if (item != (TEntity)null)
                 _UnitOfWork.SetModified(item);
+            //TODO: Gravar loggerFactory
         }
 
         public virtual void TrackItem(TEntity item)
         {
             if (item != (TEntity)null)
                 _UnitOfWork.Attach<TEntity>(item);
+            //TODO: Gravar loggerFactory
         }
 
         public virtual void Merge(TEntity persisted, TEntity current)
@@ -74,7 +78,7 @@ namespace Sample.Kadastro.Dominio
 
         public virtual TEntity Get(int id)
         {
-            if (id != null)
+            if (id != 0)
                 return GetSet().Find(id);
             else
                 return null;

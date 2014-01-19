@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2CE992D3-B093-42F7-909D-527BD2E484EA}</ProjectGuid>
+    <ProjectGuid>{8E471B9F-B0DC-4070-A1B7-18EAEEE32BC6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sample.Kadastro.Aplicacao</RootNamespace>
-    <AssemblyName>Sample.Kadastro.Aplicacao</AssemblyName>
+    <RootNamespace>Sample.Kadastro.Dominio.Teste</RootNamespace>
+    <AssemblyName>Sample.Kadastro.Dominio.Teste</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,7 +32,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,24 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTO\UsuarioDTO.cs" />
-    <Compile Include="IUsuarioAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UsuarioAppService.cs" />
-    <Compile Include="ValidatorExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resource\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Sample.Kadastro.Dominio\Sample.Kadastro.Dominio.csproj">
-      <Project>{767BEBEC-8C07-4A1D-9088-F89C43B7F43B}</Project>
-      <Name>Sample.Kadastro.Dominio</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sample.Kadastro.Infraestrutura.Comuns\Sample.Kadastro.Infraestrutura.Comuns.csproj">
-      <Project>{E7AF83A6-AFAA-498F-AADF-60968755B49A}</Project>
-      <Name>Sample.Kadastro.Infraestrutura.Comuns</Name>
-    </ProjectReference>
+    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

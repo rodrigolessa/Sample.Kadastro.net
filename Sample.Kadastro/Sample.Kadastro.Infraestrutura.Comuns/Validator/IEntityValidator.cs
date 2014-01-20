@@ -7,10 +7,10 @@ namespace Sample.Kadastro.Infraestrutura.Comuns.Validator
 {
     public interface IEntityValidator
     {
-        bool IsValid<TEntity>(TEntity item)
+        bool EhValido<TEntity>(TEntity item)
             where TEntity : class;
 
-        IEnumerable<String> GetInvalidMessages<TEntity>(TEntity item)
+        IEnumerable<String> ObterMensagensDeErro<TEntity>(TEntity item)
             where TEntity : class;
     }
 }

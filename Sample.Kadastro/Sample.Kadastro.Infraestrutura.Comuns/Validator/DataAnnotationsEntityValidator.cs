@@ -11,7 +11,7 @@ namespace Sample.Kadastro.Infraestrutura.Comuns.Validator
     {
         #region IEntityValidator membros
 
-        public bool IsValid<TEntity>(TEntity item) where TEntity : class
+        public bool EhValido<TEntity>(TEntity item) where TEntity : class
         {
             if (item == null)
                 return false;
@@ -23,7 +23,7 @@ namespace Sample.Kadastro.Infraestrutura.Comuns.Validator
             return !listaDeErros.Any();
         }
 
-        public IEnumerable<string> GetInvalidMessages<TEntity>(TEntity item) where TEntity : class
+        public IEnumerable<string> ObterMensagensDeErro<TEntity>(TEntity item) where TEntity : class
         {
             List<string> listaDeErros = new List<string>();
 

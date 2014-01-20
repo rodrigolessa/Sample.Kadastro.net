@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Sample.Kadastro.ServicoDistribuido.UsuarioServiceHost" CodeBehind="UsuarioServiceHost.svc.cs" %>

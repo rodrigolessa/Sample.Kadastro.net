@@ -31,10 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -47,7 +54,26 @@
     <Compile Include="UsuarioAppServiceTeste.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sample.Kadastro.Aplicacao\Sample.Kadastro.Aplicacao.csproj">
+      <Project>{2CE992D3-B093-42F7-909D-527BD2E484EA}</Project>
+      <Name>Sample.Kadastro.Aplicacao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sample.Kadastro.Dominio\Sample.Kadastro.Dominio.csproj">
+      <Project>{767BEBEC-8C07-4A1D-9088-F89C43B7F43B}</Project>
+      <Name>Sample.Kadastro.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sample.Kadastro.Infraestrutura.Comuns\Sample.Kadastro.Infraestrutura.Comuns.csproj">
+      <Project>{E7AF83A6-AFAA-498F-AADF-60968755B49A}</Project>
+      <Name>Sample.Kadastro.Infraestrutura.Comuns</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sample.Kadastro.Infraestrutura.Persistencia\Sample.Kadastro.Infraestrutura.Persistencia.csproj">
+      <Project>{C9532547-3844-4A72-A2FF-6187EAA7833C}</Project>
+      <Name>Sample.Kadastro.Infraestrutura.Persistencia</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

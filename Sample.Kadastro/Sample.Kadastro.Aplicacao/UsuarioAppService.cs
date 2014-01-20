@@ -45,7 +45,17 @@ namespace Sample.Kadastro.Aplicacao
             };
         }
 
-        public List<string> SalvarUsuario(UsuarioDTO item)
+        public Usuario ObterUsuario(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Usuario> ObterUsuario()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<string> SalvarUsuario(Usuario item)
         {
             throw new NotImplementedException();
         }

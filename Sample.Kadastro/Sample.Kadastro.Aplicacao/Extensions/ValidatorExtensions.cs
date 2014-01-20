@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Sample.Kadastro.Infraestrutura.Comuns.Validator;
 using Sample.Kadastro.Dominio.Entities;
 
-namespace Sample.Kadastro.Aplicacao
+namespace Sample.Kadastro.Aplicacao//.Extensions
 {
     public static class ValidatorExtensions
     {
@@ -17,13 +17,13 @@ namespace Sample.Kadastro.Aplicacao
         {
             var validador = EntityValidatorFactory.CreateValidator();
 
-            if (validador.IsValid((T)entidadeASerValidada))
+            if (validador.EhValido((T)entidadeASerValidada))
             {
                 executarSeValido();
                 return null;
             }
 
-            return validador.GetInvalidMessages((T)entidadeASerValidada);
+            return validador.ObterMensagensDeErro((T)entidadeASerValidada);
         }
 
         // Extension para uma lista de strings

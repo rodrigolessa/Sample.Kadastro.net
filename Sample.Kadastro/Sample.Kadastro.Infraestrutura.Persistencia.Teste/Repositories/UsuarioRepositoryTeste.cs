@@ -14,11 +14,14 @@ namespace Sample.Kadastro.Infraestrutura.Persistencia.Teste.Repositories
     [TestFixture]
     public class UsuarioRepositoryTeste
     {
-        private string loginUsuario = "TesteUsuarioLogin";
+        private MainUnitOfWork unit;
+        private UsuarioRepository usuarioRepository;
 
         [SetUp]
         public void Initializer()
         {
+            unit = new MainUnitOfWork();
+            usuarioRepository = new UsuarioRepository(unit);
         }
 
         /// <summary>
@@ -27,11 +30,11 @@ namespace Sample.Kadastro.Infraestrutura.Persistencia.Teste.Repositories
         [Test]
         public void ObterUsuarioPeloLogin()
         {
-            var unit = new MainUnitOfWork();
-            var usuarioRepository = new UsuarioRepository(unit);
+            var _QUERY_DELETE_USUARIO = "delete from kadastro.dbo.usuario where Login like 'TesteExcluirUsuario';";
+            unit.ExecuteCommand(_QUERY_DELETE_USUARIO);
 
             var usuario = new Usuario();
-            usuario.Login = loginUsuario;
+            usuario.Login = "TesteUsuarioLogin";
             usuario.Senha = "123";
             usuario.Status = "A";
             usuario.Email = "contato@rodrigolessa.com";
@@ -52,10 +55,13 @@ namespace Sample.Kadastro.Infraestrutura.Persistencia.Teste.Repositories
         [Test]
         public void ExcluirUsuarioPeloLogin()
         {
-            var unit = new MainUnitOfWork();
-            var usuarioRepository = new UsuarioRepository(unit);
+            var _QUERY_INSERT_USUARIO = "insert into kadastro.dbo.usuario(Login, Senha, Email, Status) values ('TesteExcluirUsuario', '123', 'contato@rodrigolessa.com', 'A');";
+            unit.ExecuteCommand(_QUERY_INSERT_USUARIO);
+
+            var loginUsuario = "TesteExcluirUsuario";
             var usuarioCadastrado = usuarioRepository.ObterPeloLogin(loginUsuario).FirstOrDefault();
 
+            Assert.IsNotNull(usuarioCadastrado, "Obtem usuário pelo login!");
             Assert.IsTrue(usuarioCadastrado.Login == loginUsuario, "Usuário encontrado!");
 
             usuarioRepository.Remove(usuarioCadastrado);

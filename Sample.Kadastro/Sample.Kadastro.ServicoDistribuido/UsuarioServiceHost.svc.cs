@@ -5,13 +5,47 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
-using Sample.Kadastro.ServicoDistribuido.Contracts;
+using Sample.Kadastro.Infraestrutura.Persistencia.Repositories;
+using Sample.Kadastro.Infraestrutura.Persistencia.UnitOfWork;
+using Sample.Kadastro.Dominio.Services;
 using Sample.Kadastro.Aplicacao;
+using Sample.Kadastro.ServicoDistribuido.Contracts;
+using Sample.Kadastro.ServicoDistribuido.Extensions;
 
 namespace Sample.Kadastro.ServicoDistribuido
 {
     public class UsuarioServiceHost : IUsuarioServiceHost
     {
+        #region Atributos
+
+        private readonly IUsuarioAppService _usuarioAppService;
+
+        #endregion
+
+        #region Construtor
+
+        public UsuarioServiceHost()
+        {
+            //context
+            var unit = new MainUnitOfWork();
+
+            //repositories
+            var usuarioRepository = new UsuarioRepository(unit);
+            var pontoRepository = new PontoRepository(unit);
+            var intervaloRepository = new IntervaloRepository(unit);
+
+            //services
+            var usuarioService = new UsuarioService(usuarioRepository);
+            //var pontoRepository = new PontoService(pontoRepository, intervaloRepository);
+
+            //applications
+            _usuarioAppService = new UsuarioAppService(usuarioRepository, usuarioService);
+        }
+
+        #endregion
+
+        #region Operações de Usuário
+
         public UsuarioDataContract ObterUsuario(int value)
         {
             throw new NotImplementedException();
@@ -19,7 +53,7 @@ namespace Sample.Kadastro.ServicoDistribuido
 
         public UsuarioDataContract ObterUsuarioPeloLogin(string value)
         {
-            throw new NotImplementedException();
+            return _usuarioAppService.Obter(value).ToUsuarioDataContract();
         }
 
         public List<UsuarioDataContract> ListarUsuarios()
@@ -31,5 +65,25 @@ namespace Sample.Kadastro.ServicoDistribuido
         {
             throw new NotImplementedException();
         }
+
+        public void ExcluirUsuario(int value)
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion
+
+        #region Operações de Ponto e Intervalos
+
+        #endregion
+
+        #region Outras Operações
+
+        public List<ItemListaDataContract> ListarPerfisDeAcesso()
+        {
+            return _usuarioAppService.ObterPerfilDeAcesso().ToPerfilAcessoDataContract();
+        }
+
+        #endregion
     }
 }

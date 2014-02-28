@@ -12,6 +12,8 @@ namespace Sample.Kadastro.ServicoDistribuido
     [ServiceContract]
     public interface IUsuarioServiceHost
     {
+        #region Operações de Usuário
+
         [OperationContract]
         UsuarioDataContract ObterUsuario(int value);
 
@@ -23,5 +25,21 @@ namespace Sample.Kadastro.ServicoDistribuido
 
         [OperationContract]
         void SalvarUsuario(UsuarioDataContract item);
+
+        [OperationContract]
+        void ExcluirUsuario(int value);
+
+        #endregion
+
+        #region Operações de Ponto e Intervalos
+
+        #endregion
+
+        #region Outras Operações
+
+        [OperationContract]
+        List<ItemListaDataContract> ListarPerfisDeAcesso();
+
+        #endregion
     }
 }

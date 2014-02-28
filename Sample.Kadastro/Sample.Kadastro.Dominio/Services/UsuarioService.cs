@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Sample.Kadastro.Dominio.Entities;
 using Sample.Kadastro.Dominio.Repositories;
+using Sample.Kadastro.Dominio.Entities.Enum;
 
 namespace Sample.Kadastro.Dominio.Services
 {
@@ -34,6 +35,11 @@ namespace Sample.Kadastro.Dominio.Services
         public Usuario ObterPeloLogin(string login)
         {
             return _usuarioRepository.ObterPeloLogin(login).FirstOrDefault();
+        }
+
+        public List<PerfilAcesso> ObterPerfilDeAcesso()
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

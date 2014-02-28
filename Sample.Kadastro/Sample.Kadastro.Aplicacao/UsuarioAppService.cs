@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Sample.Kadastro.Aplicacao.DTO;
+using Sample.Kadastro.Aplicacao.Extensions;
 using Sample.Kadastro.Infraestrutura.Comuns;
 using Sample.Kadastro.Dominio.Entities;
 using Sample.Kadastro.Dominio.Repositories;
@@ -16,46 +17,49 @@ namespace Sample.Kadastro.Aplicacao
     {
         #region Atributos
 
-        private IUsuarioRepository _iusuarioRepository = null;
+        private IUsuarioRepository _usuarioRepository = null;
+        private IUsuarioService _usuarioService = null;
 
         #endregion
 
         #region Construtor
 
-        public UsuarioAppService(IUsuarioRepository usuarioRepository)
+        public UsuarioAppService(IUsuarioRepository usuarioRepository, IUsuarioService usuarioService)
         {
-            _iusuarioRepository = usuarioRepository;
+            _usuarioRepository = usuarioRepository;
+            _usuarioService = usuarioService;
         }
 
         #endregion
 
         #region IUsuarioAppService membros
 
-        public UsuarioDTO ObterUsuario(string loginActiveDirectory)
+        public UsuarioDTO Obter(string login)
         {
-            Usuario usuario = _iusuarioRepository.ObterPeloLogin(loginActiveDirectory).FirstOrDefault();
-
-            return new UsuarioDTO()
-            {
-                Id = usuario.Id,
-                Login = usuario.Login,
-                Senha = usuario.Senha,
-                Email = usuario.Email,
-                EhPrimeiroAcesso = true
-            };
+            return _usuarioService.ObterPeloLogin(login).ToUsuarioDTO();
         }
 
-        public Usuario ObterUsuario(int id)
+        public UsuarioDTO Obter(int id)
         {
             throw new NotImplementedException();
         }
 
-        public List<Usuario> ObterUsuario()
+        public List<UsuarioDTO> Obter()
         {
             throw new NotImplementedException();
         }
 
-        public List<string> SalvarUsuario(Usuario item)
+        public List<string> Salvar(UsuarioDTO item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<string> Excluir(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<ItemListaDTO> ObterPerfilDeAcesso()
         {
             throw new NotImplementedException();
         }

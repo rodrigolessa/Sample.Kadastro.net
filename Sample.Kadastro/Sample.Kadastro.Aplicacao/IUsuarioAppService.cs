@@ -9,9 +9,12 @@ namespace Sample.Kadastro.Aplicacao
 {
     public interface IUsuarioAppService
     {
-        UsuarioDTO ObterUsuario(string loginActiveDirectory);
-        Usuario ObterUsuario(int id);
-        List<Usuario> ObterUsuario();
-        List<string> SalvarUsuario(Usuario item);
+        UsuarioDTO Obter(string login);
+        UsuarioDTO Obter(int id);
+        List<UsuarioDTO> Obter();
+        List<string> Salvar(UsuarioDTO item);
+        List<string> Excluir(int id);
+
+        List<ItemListaDTO> ObterPerfilDeAcesso();
     }
 }

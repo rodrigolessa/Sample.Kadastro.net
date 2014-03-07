@@ -80,7 +80,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="UsuarioServiceHost.svc" />
+    <Content Include="KadastroServiceHost.svc" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -96,10 +96,10 @@
     <Compile Include="Contracts\UsuarioDataContract.cs" />
     <Compile Include="Extensions\PerfilAcessoExtensions.cs" />
     <Compile Include="Extensions\UsuarioDTOExtensions.cs" />
-    <Compile Include="UsuarioServiceHost.svc.cs">
-      <DependentUpon>UsuarioServiceHost.svc</DependentUpon>
+    <Compile Include="KadastroServiceHost.svc.cs">
+      <DependentUpon>KadastroServiceHost.svc</DependentUpon>
     </Compile>
-    <Compile Include="IUsuarioServiceHost.cs" />
+    <Compile Include="IKadastroServiceHost.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -130,6 +130,9 @@
     <Content Include="Web.Work.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\KadastroService.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

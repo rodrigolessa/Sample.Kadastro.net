@@ -10,7 +10,7 @@ using Sample.Kadastro.ServicoDistribuido.Contracts;
 namespace Sample.Kadastro.ServicoDistribuido
 {
     [ServiceContract]
-    public interface IUsuarioServiceHost
+    public interface IKadastroServiceHost
     {
         #region Operações de Usuário
 

@@ -14,7 +14,7 @@ using Sample.Kadastro.ServicoDistribuido.Extensions;
 
 namespace Sample.Kadastro.ServicoDistribuido
 {
-    public class UsuarioServiceHost : IUsuarioServiceHost
+    public class KadastroServiceHost : IKadastroServiceHost
     {
         #region Atributos
 
@@ -24,7 +24,7 @@ namespace Sample.Kadastro.ServicoDistribuido
 
         #region Construtor
 
-        public UsuarioServiceHost()
+        public KadastroServiceHost()
         {
             //context
             var unit = new MainUnitOfWork();

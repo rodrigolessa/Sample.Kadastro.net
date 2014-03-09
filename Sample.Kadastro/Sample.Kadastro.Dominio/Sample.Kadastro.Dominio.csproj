@@ -61,6 +61,7 @@
     <Compile Include="Entities\Ponto.cs" />
     <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Entities\Usuario.Partial.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
     <Compile Include="IQueryableUnitOfWork.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="ISql.cs" />
@@ -70,6 +71,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Messages.resx</DependentUpon>
     </Compile>
+    <Compile Include="Model\ItemListaModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IIntervaloRepository.cs" />
     <Compile Include="Repositories\IPontoRepository.cs" />
@@ -90,6 +92,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Specifications\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sample.Kadastro.Infraestrutura.Comuns\Sample.Kadastro.Infraestrutura.Comuns.csproj">
+      <Project>{e7af83a6-afaa-498f-aadf-60968755b49a}</Project>
+      <Name>Sample.Kadastro.Infraestrutura.Comuns</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

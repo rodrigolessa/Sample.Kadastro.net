@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\TypeExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validator\DataAnnotationsEntityValidator.cs" />
     <Compile Include="Validator\DataAnnotationsEntityValidatorFactory.cs" />

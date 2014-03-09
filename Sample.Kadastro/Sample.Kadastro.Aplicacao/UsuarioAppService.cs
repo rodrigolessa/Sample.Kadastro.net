@@ -61,7 +61,7 @@ namespace Sample.Kadastro.Aplicacao
 
         public List<ItemListaDTO> ObterPerfilDeAcesso()
         {
-            throw new NotImplementedException();
+            return _usuarioService.ObterPerfilDeAcesso().ToItemListaDTO();
         }
 
         #endregion

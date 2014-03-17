@@ -134,6 +134,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\Home.pubxml" />
     <None Include="Properties\PublishProfiles\KadastroService.pubxml" />
   </ItemGroup>
   <PropertyGroup>

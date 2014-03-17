@@ -13,41 +13,7 @@
   </system.web>
   
   <system.serviceModel>
-    
-    <services>
-      <service name="Sample.Kadastro.ServicoDistribuido.KadastroServiceHost" behaviorConfiguration="ServiceBehaviour">
-        <!-- Service Endpoints -->
-        <!-- Unless fully qualified, address is relative to base address suplied above -->
-        <endpoint address="" binding="webHttpBinding" contract="Sample.Kadastro.ServicoDistribuido.IKadastroServiceHost" behaviorConfiguration="web">
-          <!--
-            Upon deployment, the following identity element should be removed or replaced to reflect the
-            identity under wich the deployed service runs. If removed WCF will infer an appropriate identity
-            automatically.
-          -->
-        </endpoint>
-      </service>
-    </services>
-    
-    <behaviors>
-      
-      <serviceBehaviors>
-        <behavior name="ServiceBehaviour">
-          <!-- To avoid disclosing metadata information, set the value below to false and remove the metadata -->
-          <serviceMetadata httpGetEnabled="true"/>
-          <!-- To receive exception details in faults for debugging purposes, set the value below to true. -->
-          <serviceDebug includeExceptionDetailInFaults="false"/>
-        </behavior>
-      </serviceBehaviors>
-      
-      <endpointBehaviors>
-        <behavior name="web">
-          <webHttp/>
-        </behavior>
-      </endpointBehaviors>
-    
-    </behaviors>
 
-    <!---
     <bindings>
       <netTcpBinding>
         <binding name="netTcpBindingConfig" closeTimeout="01:30:00" openTimeout="01:30:00" receiveTimeout="01:30:00" sendTimeout="01:30:00" hostNameComparisonMode="StrongWildcard" maxBufferSize="2147483647" maxBufferPoolSize="2147483647" maxReceivedMessageSize="2147483647" transferMode="Buffered">
@@ -72,7 +38,9 @@
       
       <serviceBehaviors>
         <behavior>
+          <!-- To avoid disclosing metadata information, set the value below to false and remove the metadata endpoint above before deployment -->
           <serviceMetadata httpGetEnabled="true" />
+          <!-- To receive exception details in faults for debugging purposes, set the value below to true.  Set to false before deployment to avoid disclosing exception information -->
           <serviceDebug includeExceptionDetailInFaults="true" />
           <dataContractSerializer maxItemsInObjectGraph="2147483647" />
         </behavior>
@@ -86,23 +54,14 @@
       
     </behaviors>
     <serviceHostingEnvironment multipleSiteBindingsEnabled="true" />
-    -->
-  
-  
   </system.serviceModel>
-  
   <system.webServer>
     <modules runAllManagedModulesForAllRequests="true" />
   </system.webServer>
-  
   <entityFramework>
-    
     <defaultConnectionFactory type="System.Data.Entity.Infrastructure.SqlConnectionFactory, EntityFramework" />
-    
     <providers>
       <provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer" />
     </providers>
-  
   </entityFramework>
-
 </configuration>

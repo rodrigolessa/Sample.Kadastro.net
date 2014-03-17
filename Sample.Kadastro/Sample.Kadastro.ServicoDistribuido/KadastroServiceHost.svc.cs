@@ -46,14 +46,14 @@ namespace Sample.Kadastro.ServicoDistribuido
 
         #region Operações de Usuário
 
-        public UsuarioDataContract ObterUsuario(int value)
+        public UsuarioDataContract ObterUsuario(string id)
         {
             throw new NotImplementedException();
         }
 
-        public UsuarioDataContract ObterUsuarioPeloLogin(string value)
+        public UsuarioDataContract ObterUsuarioPeloLogin(string login)
         {
-            return _usuarioAppService.Obter(value).ToUsuarioDataContract();
+            return _usuarioAppService.Obter(login).ToUsuarioDataContract();
         }
 
         public List<UsuarioDataContract> ListarUsuarios()
@@ -61,12 +61,12 @@ namespace Sample.Kadastro.ServicoDistribuido
             throw new NotImplementedException();
         }
 
-        public void SalvarUsuario(UsuarioDataContract item)
+        public void SalvarUsuario(string item)
         {
             throw new NotImplementedException();
         }
 
-        public void ExcluirUsuario(int value)
+        public void ExcluirUsuario(string id)
         {
             throw new NotImplementedException();
         }

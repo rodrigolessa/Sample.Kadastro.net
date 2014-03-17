@@ -15,19 +15,24 @@ namespace Sample.Kadastro.ServicoDistribuido
         #region Operações de Usuário
 
         [OperationContract]
-        UsuarioDataContract ObterUsuario(int value);
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ObterUsuario/{id}")]
+        UsuarioDataContract ObterUsuario(string id);
 
         [OperationContract]
-        UsuarioDataContract ObterUsuarioPeloLogin(string value);
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ObterUsuarioPeloLogin/{login}")]
+        UsuarioDataContract ObterUsuarioPeloLogin(string login);
 
         [OperationContract]
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ListarUsuarios/")]
         List<UsuarioDataContract> ListarUsuarios();
 
         [OperationContract]
-        void SalvarUsuario(UsuarioDataContract item);
+        [WebInvoke(Method = "PUT", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "SalvarUsuario/item")]
+        void SalvarUsuario(string item);
 
         [OperationContract]
-        void ExcluirUsuario(int value);
+        [WebInvoke(Method = "PUT", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ExcluirUsuario/{id}")]
+        void ExcluirUsuario(string id);
 
         #endregion
 
@@ -38,6 +43,7 @@ namespace Sample.Kadastro.ServicoDistribuido
         #region Outras Operações
 
         [OperationContract]
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ListarPerfisDeAcesso/")]
         List<ItemListaDataContract> ListarPerfisDeAcesso();
 
         #endregion

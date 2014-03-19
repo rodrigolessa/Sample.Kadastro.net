@@ -21,5 +21,11 @@ namespace Sample.Kadastro.ServicoDistribuido.Contracts
 
         [DataMember]
         public string Email { get; set; }
+
+        [DataMember]
+        public string Status { get; set; }
+
+        [DataMember]
+        public string DescricaoDoStatus { get; set; }
     }
 }

@@ -132,4 +132,10 @@
   <data name="ValidationUsuarioSenhaNaoPodeSerNulo" xml:space="preserve">
     <value>O campo Senha da entidade não pode ser nulo</value>
   </data>
+  <data name="ValidationExcluirUsuarioNaoEncontrado" xml:space="preserve">
+    <value>Usuário não encontrado para excluir</value>
+  </data>
+  <data name="ValidationUsuarioLoginBloqueado" xml:space="preserve">
+    <value>Usuário sem premissão de acesso!</value>
+  </data>
 </root>

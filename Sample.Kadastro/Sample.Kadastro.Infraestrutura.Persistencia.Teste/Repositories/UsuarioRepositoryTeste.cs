@@ -47,6 +47,7 @@ namespace Sample.Kadastro.Infraestrutura.Persistencia.Teste.Repositories
 
             Assert.IsNotNull(usuarioCadastrado);
             Assert.AreEqual(usuarioCadastrado.Login, usuario.Login, "Usuário cadastrado com sucesso!");
+            Assert.AreEqual("Ativo", usuarioCadastrado.DescricaoDoStatus);
         }
 
         /// <summary>

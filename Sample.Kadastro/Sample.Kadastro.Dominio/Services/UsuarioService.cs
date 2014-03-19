@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Sample.Kadastro.Infraestrutura.Comuns;
+using Sample.Kadastro.Infraestrutura.Comuns.Validator;
 using Sample.Kadastro.Dominio.Entities;
 using Sample.Kadastro.Dominio.Repositories;
 using Sample.Kadastro.Dominio.Entities.Enum;
@@ -29,9 +31,9 @@ namespace Sample.Kadastro.Dominio.Services
 
         #region IUsuarioService membros
 
-        public bool Autenticar()
+        public BusinessResponse<bool> Autenticar(string login, string senha)
         {
-            throw new NotImplementedException();
+            return new BusinessResponse<bool>(false, Messages.ValidationUsuarioLoginBloqueado);
         }
 
         public Usuario ObterPeloLogin(string login)
@@ -41,27 +43,54 @@ namespace Sample.Kadastro.Dominio.Services
 
         public Usuario Obter(int id)
         {
-            throw new NotImplementedException();
+            return _usuarioRepository.Get(id);
         }
 
         public List<Usuario> Obter()
         {
-            throw new NotImplementedException();
-        }
-
-        public List<string> Salvar(Usuario item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<string> Excluir(int id)
-        {
-            throw new NotImplementedException();
+            return _usuarioRepository.GetAll().ToList();
         }
 
         public List<ItemListaModel> ObterPerfilDeAcesso()
         {
             return typeof(PerfilAcesso).ToItemListaModel();
+        }
+
+        public BusinessResponse<bool> Salvar(Usuario item)
+        {
+            bool cadastrado = false;
+            string msgErro = string.Empty;
+
+            var erros = item.FazerSeForValido<Usuario>(() =>
+            {
+                _usuarioRepository.Add(item);
+                cadastrado = (_usuarioRepository.UnitOfWork.Commit() > 0);
+            });
+
+            if (erros.ExistemErros())
+                msgErro = erros.FirstOrDefault();
+
+            return new BusinessResponse<bool>(cadastrado, msgErro);
+        }
+
+        public BusinessResponse<bool> Excluir(int id)
+        {
+            bool excluido = false;
+            string msgErro = string.Empty;
+            Usuario usuario = _usuarioRepository.Get(id);
+
+            // TODO: Mover para classe de validação
+            if (usuario != null)
+            {
+                _usuarioRepository.Remove(usuario);
+                excluido = (_usuarioRepository.UnitOfWork.Commit() > 0);
+            }
+            else
+            {
+                msgErro = Messages.ValidationExcluirUsuarioNaoEncontrado;
+            }
+
+            return new BusinessResponse<bool>(excluido, msgErro);
         }
 
         #endregion

@@ -57,11 +57,13 @@
   <ItemGroup>
     <Compile Include="Entities\EntityBase.cs" />
     <Compile Include="Entities\Enum\PerfilAcesso.cs" />
+    <Compile Include="Entities\Enum\StatusUsuario.cs" />
     <Compile Include="Entities\Intervalo.cs" />
     <Compile Include="Entities\Ponto.cs" />
     <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Entities\Usuario.Partial.cs" />
     <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\ValidatorExtensions.cs" />
     <Compile Include="IQueryableUnitOfWork.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="ISql.cs" />

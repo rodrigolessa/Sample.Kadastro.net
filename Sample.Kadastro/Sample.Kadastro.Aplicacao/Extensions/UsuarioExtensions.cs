@@ -23,7 +23,20 @@ namespace Sample.Kadastro.Aplicacao.Extensions
                 Senha = item.Senha,
                 Email = item.Email,
                 Status = item.Status,
+                DescricaoDoStatus = item.DescricaoDoStatus,
                 EhPrimeiroAcesso = true
+            };
+        }
+
+        public static Usuario ToUsuario(this UsuarioDTO item)
+        {
+            return new Usuario()
+            {
+                Id = item.Id,
+                Login = item.Login,
+                Senha = item.Senha,
+                Email = item.Email,
+                Status = item.Status
             };
         }
     }

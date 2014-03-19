@@ -21,7 +21,22 @@ namespace Sample.Kadastro.ServicoDistribuido.Extensions
                 Id = item.Id,
                 Login = item.Login,
                 Senha = item.Senha,
-                Email = item.Email
+                Email = item.Email,
+                Status = item.Status,
+                DescricaoDoStatus = item.DescricaoDoStatus
+            };
+        }
+
+        public static UsuarioDTO ToUsuarioDTO(this UsuarioDataContract item)
+        {
+            return new UsuarioDTO()
+            {
+                Id = item.Id,
+                Login = item.Login,
+                Senha = item.Senha,
+                Email = item.Email,
+                Status = item.Status,
+                DescricaoDoStatus = item.DescricaoDoStatus
             };
         }
     }

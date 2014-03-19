@@ -77,9 +77,9 @@ namespace Sample.Kadastro.Infraestrutura.Persistencia.UnitOfWork
             base.Entry<TEntity>(original).CurrentValues.SetValues(current);
         }
 
-        public void Commit()
+        public int Commit()
         {
-            base.SaveChanges();
+            return base.SaveChanges();
         }
 
         public void CommitAndRefreshChanges()

@@ -12,6 +12,7 @@ namespace Sample.Kadastro.Aplicacao.DTO
         public string Senha { get; set; }
         public string Email { get; set; }
         public string Status { get; set; }
+        public string DescricaoDoStatus { get; set; }
         public bool EhPrimeiroAcesso { get; set; }
     }
 }

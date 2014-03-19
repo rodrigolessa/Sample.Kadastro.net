@@ -11,7 +11,7 @@ namespace Sample.Kadastro.Dominio
     // http://msdn.microsoft.com/en-us/magazine/dd882510.aspx
     public interface IUnitOfWork : IDisposable
     {
-        void Commit();
+        int Commit();
         void CommitAndRefreshChanges();
         void RollbackChanges();
     }

@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using Sample.Kadastro.Infraestrutura.Comuns;
 using Sample.Kadastro.Infraestrutura.Persistencia.Repositories;
 using Sample.Kadastro.Infraestrutura.Persistencia.UnitOfWork;
 using Sample.Kadastro.Dominio.Services;
@@ -46,9 +47,14 @@ namespace Sample.Kadastro.ServicoDistribuido
 
         #region Operações de Usuário
 
+        public BusinessResponse<bool> Autenticar(string login, string senha)
+        {
+            return _usuarioAppService.Autenticar(login, senha);
+        }
+
         public UsuarioDataContract ObterUsuario(string id)
         {
-            throw new NotImplementedException();
+            return _usuarioAppService.Obter(int.Parse(id)).ToUsuarioDataContract();
         }
 
         public UsuarioDataContract ObterUsuarioPeloLogin(string login)
@@ -58,17 +64,27 @@ namespace Sample.Kadastro.ServicoDistribuido
 
         public List<UsuarioDataContract> ListarUsuarios()
         {
-            throw new NotImplementedException();
+            return _usuarioAppService.Obter().ToUsuarioDataContract();
         }
 
-        public void SalvarUsuario(string item)
+        public BusinessResponse<bool> SalvarUsuario(string id, string login, string senha, string email, string status)
         {
-            throw new NotImplementedException();
+            UsuarioDataContract usuario = new UsuarioDataContract();
+
+            usuario.Login = login;
+            usuario.Senha = senha;
+            usuario.Email = email;
+            usuario.Status = status;
+
+            if (!string.IsNullOrEmpty(id))
+                usuario.Id = int.Parse(id);
+
+            return _usuarioAppService.Salvar(usuario.ToUsuarioDTO());
         }
 
-        public void ExcluirUsuario(string id)
+        public BusinessResponse<bool> ExcluirUsuario(string id)
         {
-            throw new NotImplementedException();
+            return _usuarioAppService.Excluir(int.Parse(id));
         }
 
         #endregion

@@ -34,6 +34,11 @@ namespace Sample.Kadastro.Aplicacao
 
         #region IUsuarioAppService membros
 
+        public BusinessResponse<bool> Autenticar(string login, string senha)
+        {
+            return _usuarioService.Autenticar(login, senha);
+        }
+
         public UsuarioDTO Obter(string login)
         {
             return _usuarioService.ObterPeloLogin(login).ToUsuarioDTO();
@@ -41,22 +46,22 @@ namespace Sample.Kadastro.Aplicacao
 
         public UsuarioDTO Obter(int id)
         {
-            throw new NotImplementedException();
+            return _usuarioService.Obter(id).ToUsuarioDTO();
         }
 
         public List<UsuarioDTO> Obter()
         {
-            throw new NotImplementedException();
+            return _usuarioService.Obter().ToUsuarioDTO();
         }
 
-        public List<string> Salvar(UsuarioDTO item)
+        public BusinessResponse<bool> Salvar(UsuarioDTO item)
         {
-            throw new NotImplementedException();
+            return _usuarioService.Salvar(item.ToUsuario());
         }
 
-        public List<string> Excluir(int id)
+        public BusinessResponse<bool> Excluir(int id)
         {
-            throw new NotImplementedException();
+            return _usuarioService.Excluir(id);
         }
 
         public List<ItemListaDTO> ObterPerfilDeAcesso()

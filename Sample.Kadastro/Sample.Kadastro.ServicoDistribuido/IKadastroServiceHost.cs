@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using Sample.Kadastro.Infraestrutura.Comuns;
 using Sample.Kadastro.ServicoDistribuido.Contracts;
 
 namespace Sample.Kadastro.ServicoDistribuido
@@ -13,6 +14,10 @@ namespace Sample.Kadastro.ServicoDistribuido
     public interface IKadastroServiceHost
     {
         #region Operações de Usuário
+
+        [OperationContract]
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "Autenticar/{login}/{senha}")]
+        BusinessResponse<Boolean> Autenticar(string login, string senha);
 
         [OperationContract]
         [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ObterUsuario/{id}")]
@@ -27,12 +32,12 @@ namespace Sample.Kadastro.ServicoDistribuido
         List<UsuarioDataContract> ListarUsuarios();
 
         [OperationContract]
-        [WebInvoke(Method = "PUT", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "SalvarUsuario/item")]
-        void SalvarUsuario(string item);
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "SalvarUsuario/{id}/{login}/{senha}/{email}/{status}")]
+        BusinessResponse<Boolean> SalvarUsuario(string id, string login, string senha, string email, string status);
 
         [OperationContract]
-        [WebInvoke(Method = "PUT", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ExcluirUsuario/{id}")]
-        void ExcluirUsuario(string id);
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ExcluirUsuario/{id}")]
+        BusinessResponse<Boolean> ExcluirUsuario(string id);
 
         #endregion
 

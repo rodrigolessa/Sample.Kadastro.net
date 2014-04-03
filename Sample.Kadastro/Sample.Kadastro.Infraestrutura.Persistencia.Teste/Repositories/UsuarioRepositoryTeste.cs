@@ -30,7 +30,7 @@ namespace Sample.Kadastro.Infraestrutura.Persistencia.Teste.Repositories
         [Test]
         public void ObterUsuarioPeloLogin()
         {
-            var _QUERY_DELETE_USUARIO = "delete from kadastro.dbo.usuario where Login like 'TesteExcluirUsuario';";
+            var _QUERY_DELETE_USUARIO = "delete from kadastro.dbo.usuario where Login like 'TesteUsuarioLogin';";
             unit.ExecuteCommand(_QUERY_DELETE_USUARIO);
 
             var usuario = new Usuario();

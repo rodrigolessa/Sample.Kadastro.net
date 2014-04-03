@@ -8,6 +8,7 @@ namespace Sample.Kadastro.Dominio.Entities
         public Usuario()
         {
             this.Pontos = new List<Ponto>();
+            this.Tarefas = new List<Tarefa>();
         }
 
         public int Id { get; set; }
@@ -16,5 +17,6 @@ namespace Sample.Kadastro.Dominio.Entities
         public string Email { get; set; }
         public string Status { get; set; }
         public virtual ICollection<Ponto> Pontos { get; set; }
+        public virtual ICollection<Tarefa> Tarefas { get; set; }
     }
 }

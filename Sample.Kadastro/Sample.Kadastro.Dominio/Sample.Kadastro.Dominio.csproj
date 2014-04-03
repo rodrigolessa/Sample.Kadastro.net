@@ -60,6 +60,7 @@
     <Compile Include="Entities\Enum\StatusUsuario.cs" />
     <Compile Include="Entities\Intervalo.cs" />
     <Compile Include="Entities\Ponto.cs" />
+    <Compile Include="Entities\Tarefa.cs" />
     <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Entities\Usuario.Partial.cs" />
     <Compile Include="Extensions\EnumExtensions.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IIntervaloRepository.cs" />
     <Compile Include="Repositories\IPontoRepository.cs" />
+    <Compile Include="Repositories\ITarefaRepository.cs" />
     <Compile Include="Repositories\IUsuarioRepository.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="Services\IUsuarioService.cs" />

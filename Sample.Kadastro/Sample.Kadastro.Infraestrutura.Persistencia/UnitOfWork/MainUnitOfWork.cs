@@ -53,6 +53,18 @@ namespace Sample.Kadastro.Infraestrutura.Persistencia.UnitOfWork
             }
         }
 
+        IDbSet<Tarefa> _tarefas;
+        public IDbSet<Tarefa> Tarefas
+        {
+            get
+            {
+                if (_tarefas == null)
+                    _tarefas = base.Set<Tarefa>();
+
+                return _tarefas;
+            }
+        }
+
         #endregion
 
         #region IQueryableUnitOfWork Members
@@ -139,6 +151,7 @@ namespace Sample.Kadastro.Infraestrutura.Persistencia.UnitOfWork
             modelBuilder.Configurations.Add(new UsuarioTypeConfiguration());
             modelBuilder.Configurations.Add(new PontoTypeConfiguration());
             modelBuilder.Configurations.Add(new IntervaloTypeConfiguration());
+            modelBuilder.Configurations.Add(new TarefaTypeConfiguration());
         }
 
         #endregion

@@ -61,10 +61,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IntervaloRepository.cs" />
     <Compile Include="Repositories\PontoRepository.cs" />
+    <Compile Include="Repositories\TarefaRepository.cs" />
     <Compile Include="Repositories\UsuarioRepository.cs" />
     <Compile Include="UnitOfWork\MainUnitOfWork.cs" />
     <Compile Include="UnitOfWork\Mapping\IntervaloTypeConfiguration.cs" />
     <Compile Include="UnitOfWork\Mapping\PontoTypeConfiguration.cs" />
+    <Compile Include="UnitOfWork\Mapping\TarefaTypeConfiguration.cs" />
     <Compile Include="UnitOfWork\Mapping\UsuarioTypeConfiguration.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -67,6 +67,8 @@
     <Compile Include="Initializers\AssemblyTestsInitialize.cs" />
     <Compile Include="Initializers\MainUnitOfWorkInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\PontoRepositoryTeste.cs" />
+    <Compile Include="Repositories\TarefaRepositoryTeste.cs" />
     <Compile Include="Repositories\UsuarioRepositoryTeste.cs" />
   </ItemGroup>
   <ItemGroup>

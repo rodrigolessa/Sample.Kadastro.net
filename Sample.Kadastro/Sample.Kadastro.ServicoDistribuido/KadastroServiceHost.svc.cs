@@ -67,24 +67,24 @@ namespace Sample.Kadastro.ServicoDistribuido
             return _usuarioAppService.Obter().ToUsuarioDataContract();
         }
 
-        public BusinessResponse<bool> SalvarUsuario(string id, string login, string senha, string email, string status)
+        public BusinessResponse<bool> SalvarUsuario(UsuarioDataContract usuario)
         {
-            UsuarioDataContract usuario = new UsuarioDataContract();
+            //UsuarioDataContract usuario = new UsuarioDataContract();
 
-            usuario.Login = login;
-            usuario.Senha = senha;
-            usuario.Email = email;
-            usuario.Status = status;
+            //usuario.Login = login;
+            //usuario.Senha = senha;
+            //usuario.Email = email;
+            //usuario.Status = status;
 
-            if (!string.IsNullOrEmpty(id))
-                usuario.Id = int.Parse(id);
+            //if (!string.IsNullOrEmpty(id))
+                //usuario.Id = int.Parse(id);
 
             return _usuarioAppService.Salvar(usuario.ToUsuarioDTO());
         }
 
-        public BusinessResponse<bool> ExcluirUsuario(string id)
+        public BusinessResponse<bool> ExcluirUsuario(int id)
         {
-            return _usuarioAppService.Excluir(int.Parse(id));
+            return _usuarioAppService.Excluir(id);
         }
 
         #endregion
@@ -98,6 +98,21 @@ namespace Sample.Kadastro.ServicoDistribuido
         public List<ItemListaDataContract> ListarPerfisDeAcesso()
         {
             return _usuarioAppService.ObterPerfilDeAcesso().ToPerfilAcessoDataContract();
+        }
+
+        public List<TarefaDataContract> ListarTarefas(int idUsuario)
+        {
+            throw new NotImplementedException();
+        }
+
+        public BusinessResponse<bool> SalvarTarefa(TarefaDataContract tarefa)
+        {
+            throw new NotImplementedException();
+        }
+
+        public BusinessResponse<bool> ExcluirTarefa(long id)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

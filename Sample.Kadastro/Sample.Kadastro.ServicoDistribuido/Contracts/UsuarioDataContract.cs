@@ -11,7 +11,7 @@ namespace Sample.Kadastro.ServicoDistribuido.Contracts
     public class UsuarioDataContract
     {
         [DataMember]
-        public int Id { get; set; }
+        public Nullable<Int32> Id { get; set; }
 
         [DataMember]
         public string Login { get; set; }

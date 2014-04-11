@@ -32,12 +32,14 @@ namespace Sample.Kadastro.ServicoDistribuido
         List<UsuarioDataContract> ListarUsuarios();
 
         [OperationContract]
-        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "SalvarUsuario/{id}/{login}/{senha}/{email}/{status}")]
-        BusinessResponse<Boolean> SalvarUsuario(string id, string login, string senha, string email, string status);
+        [WebInvoke(Method = "POST", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "SalvarUsuario/")]
+        BusinessResponse<Boolean> SalvarUsuario(UsuarioDataContract usuario);
+        //BusinessResponse<Boolean> SalvarUsuario(Nullable<Int32> id, string login, string senha, string email, string status);
+        //[WebInvoke(Method = "POST", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "SalvarUsuario/{id}/{login}/{senha}/{email}/{status}")]
 
         [OperationContract]
-        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ExcluirUsuario/{id}")]
-        BusinessResponse<Boolean> ExcluirUsuario(string id);
+        [WebInvoke(Method = "DELETE", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ExcluirUsuario/")]
+        BusinessResponse<Boolean> ExcluirUsuario(int id);
 
         #endregion
 
@@ -50,6 +52,18 @@ namespace Sample.Kadastro.ServicoDistribuido
         [OperationContract]
         [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ListarPerfisDeAcesso/")]
         List<ItemListaDataContract> ListarPerfisDeAcesso();
+
+        [OperationContract]
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ListarTarefas/")]
+        List<TarefaDataContract> ListarTarefas(int idUsuario);
+
+        [OperationContract]
+        [WebInvoke(Method = "POST", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "SalvarTarefa/")]
+        BusinessResponse<Boolean> SalvarTarefa(TarefaDataContract tarefa);
+
+        [OperationContract]
+        [WebInvoke(Method = "DELETE", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ExcluirTarefa/")]
+        BusinessResponse<Boolean> ExcluirTarefa(Int64 id);
 
         #endregion
     }

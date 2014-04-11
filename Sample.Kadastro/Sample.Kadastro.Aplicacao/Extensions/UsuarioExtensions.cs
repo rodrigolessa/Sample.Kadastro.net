@@ -32,7 +32,7 @@ namespace Sample.Kadastro.Aplicacao.Extensions
         {
             return new Usuario()
             {
-                Id = item.Id,
+                Id = item.Id.HasValue? item.Id.Value : 0,
                 Login = item.Login,
                 Senha = item.Senha,
                 Email = item.Email,

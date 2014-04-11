@@ -7,7 +7,7 @@ namespace Sample.Kadastro.Aplicacao.DTO
 {
     public class UsuarioDTO
     {
-        public int Id { get; set; }
+        public Nullable<Int32> Id { get; set; }
         public string Login { get; set; }
         public string Senha { get; set; }
         public string Email { get; set; }

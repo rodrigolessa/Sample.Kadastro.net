@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
-namespace Sample.Kadastro.Dominio.Entities
+namespace Sample.Kadastro.Aplicacao.DTO
 {
-    public partial class Tarefa : EntityBase
+    public class TarefaDTO
     {
         public Nullable<Int32> Id { get; set; }
         public int IdUsuario { get; set; }
         public string Descricao { get; set; }
-        public Nullable<Boolean> Executada { get; set; }
-        public virtual Usuario Usuario { get; set; }
+        public bool Executada { get; set; }
+        public UsuarioDTO Usuario { get; set; }
     }
 }

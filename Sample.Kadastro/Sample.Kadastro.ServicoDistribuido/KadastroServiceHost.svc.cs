@@ -93,12 +93,7 @@ namespace Sample.Kadastro.ServicoDistribuido
 
         #endregion
 
-        #region Outras Operações
-
-        public List<ItemListaDataContract> ListarPerfisDeAcesso()
-        {
-            return _usuarioAppService.ObterPerfilDeAcesso().ToPerfilAcessoDataContract();
-        }
+        #region Operações de Tarefas
 
         public List<TarefaDataContract> ListarTarefas(int idUsuario)
         {
@@ -113,6 +108,15 @@ namespace Sample.Kadastro.ServicoDistribuido
         public BusinessResponse<bool> ExcluirTarefa(long id)
         {
             throw new NotImplementedException();
+        }
+
+        #endregion
+
+        #region Outras Operações
+
+        public List<ItemListaDataContract> ListarPerfisDeAcesso()
+        {
+            return _usuarioAppService.ObterPerfilDeAcesso().ToPerfilAcessoDataContract();
         }
 
         #endregion

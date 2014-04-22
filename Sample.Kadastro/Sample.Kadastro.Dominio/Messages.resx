@@ -138,4 +138,28 @@
   <data name="ValidationUsuarioLoginBloqueado" xml:space="preserve">
     <value>Usuário sem premissão de acesso!</value>
   </data>
+  <data name="ValidationTarefaNaoExiste" xml:space="preserve">
+    <value>Tarefa Não encontrada!</value>
+  </data>
+  <data name="ValidationTarefaExcluidaSucesso" xml:space="preserve">
+    <value>Tarefa excluida com sucesso!</value>
+  </data>
+  <data name="ValidationTarefaSalvaSucesso" xml:space="preserve">
+    <value>Tarefa salva com sucesso!</value>
+  </data>
+  <data name="ValidationUsuarioExcluidoSucesso" xml:space="preserve">
+    <value>Usuário excluida com sucesso!</value>
+  </data>
+  <data name="ValidationUsuarioSalvoSucesso" xml:space="preserve">
+    <value>Usuário salvo com sucesso!</value>
+  </data>
+  <data name="ValidationGenerico" xml:space="preserve">
+    <value>Erro Interno!</value>
+  </data>
+  <data name="ValidationTarefaAlteradaSucesso" xml:space="preserve">
+    <value>Tarefa alterada com sucesso!</value>
+  </data>
+  <data name="ValidationGenericoCampoObrigatorio" xml:space="preserve">
+    <value>O campo {0} deve ser preenchido!</value>
+  </data>
 </root>

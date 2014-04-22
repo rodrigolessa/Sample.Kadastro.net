@@ -11,7 +11,7 @@ namespace Sample.Kadastro.ServicoDistribuido.Contracts
     public class TarefaDataContract
     {
         [DataMember]
-        public Int64 Id { get; set; }
+        public Nullable<Int32> Id { get; set; }
         
         [DataMember]
         public int IdUsuario { get; set; }
@@ -21,5 +21,8 @@ namespace Sample.Kadastro.ServicoDistribuido.Contracts
 
         [DataMember]
         public bool Executada { get; set; }
+
+        [DataMember]
+        public UsuarioDataContract Usuario { get; set; }
     }
 }

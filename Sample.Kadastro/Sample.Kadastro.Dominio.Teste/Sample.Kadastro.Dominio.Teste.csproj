@@ -40,7 +40,17 @@
     <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -50,9 +60,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\TarefaServiceTeste.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Services\" />
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sample.Kadastro.Dominio\Sample.Kadastro.Dominio.csproj">
+      <Project>{767bebec-8c07-4a1d-9088-f89c43b7f43b}</Project>
+      <Name>Sample.Kadastro.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sample.Kadastro.Infraestrutura.Comuns\Sample.Kadastro.Infraestrutura.Comuns.csproj">
+      <Project>{e7af83a6-afaa-498f-aadf-60968755b49a}</Project>
+      <Name>Sample.Kadastro.Infraestrutura.Comuns</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sample.Kadastro.Infraestrutura.Persistencia\Sample.Kadastro.Infraestrutura.Persistencia.csproj">
+      <Project>{c9532547-3844-4a72-a2ff-6187eaa7833c}</Project>
+      <Name>Sample.Kadastro.Infraestrutura.Persistencia</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

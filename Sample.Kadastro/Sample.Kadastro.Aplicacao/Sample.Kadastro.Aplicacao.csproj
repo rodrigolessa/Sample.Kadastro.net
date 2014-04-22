@@ -52,12 +52,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTO\ItemListaDTO.cs" />
+    <Compile Include="DTO\TarefaDTO.cs" />
     <Compile Include="DTO\UsuarioDTO.cs" />
     <Compile Include="Extensions\ItemListaExtensions.cs" />
     <Compile Include="Extensions\PerfilAcessoExtensions.cs" />
     <Compile Include="Extensions\UsuarioExtensions.cs" />
+    <Compile Include="ITarefaAppService.cs" />
     <Compile Include="IUsuarioAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TarefaAppService.cs" />
     <Compile Include="UsuarioAppService.cs" />
     <Compile Include="Extensions\ValidatorExtensions.cs" />
   </ItemGroup>

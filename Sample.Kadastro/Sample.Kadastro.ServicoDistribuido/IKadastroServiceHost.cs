@@ -47,11 +47,7 @@ namespace Sample.Kadastro.ServicoDistribuido
 
         #endregion
 
-        #region Outras Operações
-
-        [OperationContract]
-        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ListarPerfisDeAcesso/")]
-        List<ItemListaDataContract> ListarPerfisDeAcesso();
+        #region Operações de Tarefas
 
         [OperationContract]
         [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ListarTarefas/")]
@@ -64,6 +60,14 @@ namespace Sample.Kadastro.ServicoDistribuido
         [OperationContract]
         [WebInvoke(Method = "DELETE", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ExcluirTarefa/")]
         BusinessResponse<Boolean> ExcluirTarefa(Int64 id);
+
+        #endregion
+
+        #region Outras Operações
+
+        [OperationContract]
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ListarPerfisDeAcesso/")]
+        List<ItemListaDataContract> ListarPerfisDeAcesso();
 
         #endregion
     }

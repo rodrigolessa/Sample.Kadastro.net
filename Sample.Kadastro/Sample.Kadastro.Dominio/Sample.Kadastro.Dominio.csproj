@@ -61,6 +61,7 @@
     <Compile Include="Entities\Intervalo.cs" />
     <Compile Include="Entities\Ponto.cs" />
     <Compile Include="Entities\Tarefa.cs" />
+    <Compile Include="Entities\Tarefa.Partial.cs" />
     <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Entities\Usuario.Partial.cs" />
     <Compile Include="Extensions\EnumExtensions.cs" />
@@ -81,7 +82,9 @@
     <Compile Include="Repositories\ITarefaRepository.cs" />
     <Compile Include="Repositories\IUsuarioRepository.cs" />
     <Compile Include="Repository.cs" />
+    <Compile Include="Services\ITarefaService.cs" />
     <Compile Include="Services\IUsuarioService.cs" />
+    <Compile Include="Services\TarefaService.cs" />
     <Compile Include="Services\UsuarioService.cs" />
   </ItemGroup>
   <ItemGroup>

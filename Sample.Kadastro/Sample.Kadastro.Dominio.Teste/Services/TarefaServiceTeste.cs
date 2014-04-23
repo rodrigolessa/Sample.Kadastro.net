@@ -50,5 +50,66 @@ namespace Sample.Kadastro.Dominio.Teste.Services
 
             Assert.IsTrue(retorno.Response);
         }
+
+        [Test]
+        public void InserirTarefaExecutadaPorIdUsuario()
+        {
+            // Obter Usuário para relacionar a tarefa
+            var usuario = _usuarioService.ObterPeloLogin(_loginUsuario);
+            Assert.IsNotNull(usuario, "Usuário Cadastrado");
+            Assert.AreEqual("contato@rodrigolessa.com", usuario.Email);
+
+            // Instânciando uma nova tarefa
+            var tarefa = new Tarefa();
+            tarefa.IdUsuario = usuario.Id.Value;
+            tarefa.Descricao = "Comprar 100 gramas de presunto.";
+            tarefa.Executada = true;
+
+            var retorno = _tarefaService.Salvar(tarefa);
+            Assert.IsTrue(retorno.Response);
+        }
+
+        [Test]
+        public void ExecutarTarefaPorLoginUsuario()
+        {
+            // Instânciando uma nova tarefa não executada
+            var tarefa = new Tarefa();
+            tarefa.Descricao = "Comprar 200 gramas de queijo cottage.";
+            tarefa.Executada = false;
+            tarefa.Usuario = _usuarioService.ObterPeloLogin(_loginUsuario);
+
+            // Grava a tarefa para o usuário
+            _tarefaService.Salvar(tarefa);
+
+            // Obter tarefas do usuário
+            var tarefasDoUsuario = _tarefaService.Obter(_loginUsuario);
+            Assert.IsNotNull(tarefasDoUsuario);
+            Assert.GreaterOrEqual(tarefasDoUsuario.Count, 1);
+
+            var tarefaParaExecutar = tarefasDoUsuario.Where(x => x.Executada == false && x.Descricao.Contains("queijo")).FirstOrDefault();
+            Assert.IsNotNull(tarefaParaExecutar);
+
+            var executada = _tarefaService.Executar(tarefaParaExecutar.Id.Value);
+            Assert.IsTrue(executada.Response);
+        }
+
+        [Test]
+        public void ExcluirTarefaDoUsuario()
+        {
+            // Instânciando uma nova tarefa não executada
+            var tarefa = new Tarefa();
+            tarefa.Descricao = "100 gramas de queijo Gorgonzola.";
+            tarefa.Executada = false;
+            tarefa.Usuario = _usuarioService.ObterPeloLogin(_loginUsuario);
+            // Grava a tarefa para o usuário
+            _tarefaService.Salvar(tarefa);
+
+            // Obter tarefas do usuário
+            var tarefaParaExcluir = _tarefaService.Obter(_loginUsuario).Where(x => x.Descricao.Contains("queijo")).FirstOrDefault();
+            Assert.IsNotNull(tarefaParaExcluir);
+
+            var excluida = _tarefaService.Excluir(tarefaParaExcluir.Id.Value);
+            Assert.IsTrue(excluida.Response);
+        }
     }
 }

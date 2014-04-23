@@ -50,8 +50,8 @@ namespace Sample.Kadastro.ServicoDistribuido
         #region Operações de Tarefas
 
         [OperationContract]
-        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ListarTarefas/")]
-        List<TarefaDataContract> ListarTarefas(int idUsuario);
+        [WebInvoke(Method = "GET", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ListarTarefas/{login}/")]
+        List<TarefaDataContract> ListarTarefas(string login);
 
         [OperationContract]
         [WebInvoke(Method = "POST", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "SalvarTarefa/")]
@@ -59,7 +59,11 @@ namespace Sample.Kadastro.ServicoDistribuido
 
         [OperationContract]
         [WebInvoke(Method = "DELETE", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ExcluirTarefa/")]
-        BusinessResponse<Boolean> ExcluirTarefa(Int64 id);
+        BusinessResponse<Boolean> ExcluirTarefa(Int32 id);
+
+        [OperationContract]
+        [WebInvoke(Method = "POST", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, UriTemplate = "ExecutarTarefa/")]
+        BusinessResponse<Boolean> ExecutarTarefa(Int32 id);
 
         #endregion
 

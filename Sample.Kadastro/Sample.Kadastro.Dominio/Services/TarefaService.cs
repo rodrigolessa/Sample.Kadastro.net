@@ -41,8 +41,8 @@ namespace Sample.Kadastro.Dominio.Services
             bool salvo = false;
             string msg = Messages.ValidationGenerico;
 
-            var erros = item.FazerSeForValido<Tarefa>(() =>
-                {
+            //var erros = item.FazerSeForValido<Tarefa>(() =>
+                //{
                     if (item.Id.HasValue)
                     {
                         Tarefa tarefa = _tarefaRepository.Get(item.Id.Value);
@@ -69,10 +69,10 @@ namespace Sample.Kadastro.Dominio.Services
                         if (salvo)
                             msg = Messages.ValidationTarefaSalvaSucesso;
                     }
-                });
+                //});
 
-            if (erros.ExistemErros())
-                msg = erros.FirstOrDefault();
+            //if (erros.ExistemErros())
+                //msg = erros.FirstOrDefault();
 
             return new BusinessResponse<bool>(salvo, msg);
         }

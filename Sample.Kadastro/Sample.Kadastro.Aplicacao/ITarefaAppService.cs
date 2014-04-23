@@ -12,7 +12,7 @@ namespace Sample.Kadastro.Aplicacao
     {
         List<TarefaDTO> Obter(string login);
         BusinessResponse<Boolean> Salvar(TarefaDTO item);
-        BusinessResponse<Boolean> Excluir(Int64 id);
-        BusinessResponse<Boolean> Executar(Int64 id);
+        BusinessResponse<Boolean> Excluir(Int32 id);
+        BusinessResponse<Boolean> Executar(Int32 id);
     }
 }

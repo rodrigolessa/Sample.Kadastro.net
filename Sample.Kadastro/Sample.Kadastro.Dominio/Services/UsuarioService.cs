@@ -61,14 +61,14 @@ namespace Sample.Kadastro.Dominio.Services
             bool cadastrado = false;
             string msgErro = string.Empty;
 
-            var erros = item.FazerSeForValido<Usuario>(() =>
-            {
+            //var erros = item.FazerSeForValido<Usuario>(() =>
+            //{
                 _usuarioRepository.Add(item);
                 cadastrado = (_usuarioRepository.UnitOfWork.Commit() > 0);
-            });
+            //});
 
-            if (erros.ExistemErros())
-                msgErro = erros.FirstOrDefault();
+            //if (erros.ExistemErros())
+                //msgErro = erros.FirstOrDefault();
 
             return new BusinessResponse<bool>(cadastrado, msgErro);
         }

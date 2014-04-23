@@ -20,6 +20,7 @@ namespace Sample.Kadastro.ServicoDistribuido
         #region Atributos
 
         private readonly IUsuarioAppService _usuarioAppService;
+        private readonly ITarefaAppService _tarefaAppService;
 
         #endregion
 
@@ -34,13 +35,16 @@ namespace Sample.Kadastro.ServicoDistribuido
             var usuarioRepository = new UsuarioRepository(unit);
             var pontoRepository = new PontoRepository(unit);
             var intervaloRepository = new IntervaloRepository(unit);
+            var tarefaRepository = new TarefaRepository(unit);
 
             //services
             var usuarioService = new UsuarioService(usuarioRepository);
+            var tarefaService = new TarefaService(tarefaRepository);
             //var pontoRepository = new PontoService(pontoRepository, intervaloRepository);
 
             //applications
             _usuarioAppService = new UsuarioAppService(usuarioRepository, usuarioService);
+            _tarefaAppService = new TarefaAppService(tarefaRepository, tarefaService);
         }
 
         #endregion
@@ -95,19 +99,24 @@ namespace Sample.Kadastro.ServicoDistribuido
 
         #region Operações de Tarefas
 
-        public List<TarefaDataContract> ListarTarefas(int idUsuario)
+        public List<TarefaDataContract> ListarTarefas(string login)
         {
-            throw new NotImplementedException();
+            return _tarefaAppService.Obter(login).ToTarefaDataContract();
         }
 
         public BusinessResponse<bool> SalvarTarefa(TarefaDataContract tarefa)
         {
-            throw new NotImplementedException();
+            return _tarefaAppService.Salvar(tarefa.ToTarefaDTO());
         }
 
-        public BusinessResponse<bool> ExcluirTarefa(long id)
+        public BusinessResponse<bool> ExcluirTarefa(int id)
         {
-            throw new NotImplementedException();
+            return _tarefaAppService.Excluir(id);
+        }
+
+        public BusinessResponse<bool> ExecutarTarefa(int id)
+        {
+            return _tarefaAppService.Executar(id);
         }
 
         #endregion

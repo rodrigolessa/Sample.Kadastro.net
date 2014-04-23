@@ -17,17 +17,17 @@ namespace Sample.Kadastro.Aplicacao
     {
         #region Atributos
 
-        private ITarefaRepository _usuarioRepository = null;
-        private ITarefaService _usuarioService = null;
+        private ITarefaRepository _tarefaRepository = null;
+        private ITarefaService _tarefaService = null;
 
         #endregion
 
         #region Construtor
 
-        public TarefaAppService(ITarefaRepository usuarioRepository, ITarefaService usuarioService)
+        public TarefaAppService(ITarefaRepository tarefaRepository, ITarefaService tarefaService)
         {
-            _usuarioRepository = usuarioRepository;
-            _usuarioService = usuarioService;
+            _tarefaRepository = tarefaRepository;
+            _tarefaService = tarefaService;
         }
 
         #endregion
@@ -36,22 +36,22 @@ namespace Sample.Kadastro.Aplicacao
 
         public List<TarefaDTO> Obter(string login)
         {
-            throw new NotImplementedException();
+            return _tarefaService.Obter(login).ToTarefaDTO();
         }
 
         public BusinessResponse<bool> Salvar(TarefaDTO item)
         {
-            throw new NotImplementedException();
+            return _tarefaService.Salvar(item.ToUsuario());
         }
 
-        public BusinessResponse<bool> Excluir(long id)
+        public BusinessResponse<bool> Excluir(int id)
         {
-            throw new NotImplementedException();
+            return _tarefaService.Excluir(id);
         }
 
-        public BusinessResponse<bool> Executar(long id)
+        public BusinessResponse<bool> Executar(int id)
         {
-            throw new NotImplementedException();
+            return _tarefaService.Executar(id);
         }
 
 #endregion

@@ -98,6 +98,7 @@
     <Compile Include="Contracts\TarefaDataContract.cs" />
     <Compile Include="Contracts\UsuarioDataContract.cs" />
     <Compile Include="Extensions\PerfilAcessoExtensions.cs" />
+    <Compile Include="Extensions\TarefaDTOExtensions.cs" />
     <Compile Include="Extensions\UsuarioDTOExtensions.cs" />
     <Compile Include="KadastroServiceHost.svc.cs">
       <DependentUpon>KadastroServiceHost.svc</DependentUpon>
@@ -135,6 +136,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\ASPOffice.pubxml" />
     <None Include="Properties\PublishProfiles\HomeOffice.pubxml" />
     <None Include="Properties\PublishProfiles\Office.pubxml" />
   </ItemGroup>

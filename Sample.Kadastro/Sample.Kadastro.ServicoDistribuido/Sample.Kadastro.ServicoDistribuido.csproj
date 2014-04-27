@@ -136,6 +136,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\ASPHomeRelease.pubxml" />
     <None Include="Properties\PublishProfiles\ASPOffice.pubxml" />
     <None Include="Properties\PublishProfiles\HomeOffice.pubxml" />
     <None Include="Properties\PublishProfiles\Office.pubxml" />

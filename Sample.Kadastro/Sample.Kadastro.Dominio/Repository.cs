@@ -116,6 +116,7 @@ namespace Sample.Kadastro.Dominio
 
             return dbset;
         }
+
         #endregion
     }
 }

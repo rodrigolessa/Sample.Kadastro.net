@@ -26,10 +26,10 @@ namespace Sample.Kadastro.Dominio.Entities
                             descricao = StatusUsuario.Ativo.ToString();
                             break;
                         case (char)StatusUsuario.Inativo:
-                            descricao = StatusUsuario.Ativo.ToString();
+                            descricao = StatusUsuario.Inativo.ToString();
                             break;
                         case (char)StatusUsuario.Pendente:
-                            descricao = StatusUsuario.Ativo.ToString();
+                            descricao = StatusUsuario.Pendente.ToString();
                             break;
                     }
                 }

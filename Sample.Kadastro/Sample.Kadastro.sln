@@ -27,8 +27,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.5 - Infraestrutura de Per
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.6 - Infraestrutura Vertical", "2.6 - Infraestrutura Vertical", "{6B9DAAC9-DB9C-4C24-B37A-9A4E8C6D8255}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Kadastro.UI.Web", "Sample.Kadastro.UI.Web\Sample.Kadastro.UI.Web.csproj", "{F82242B5-B961-4984-AC5E-AA5EC52322DB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Kadastro.Aplicacao", "Sample.Kadastro.Aplicacao\Sample.Kadastro.Aplicacao.csproj", "{2CE992D3-B093-42F7-909D-527BD2E484EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Kadastro.Dominio", "Sample.Kadastro.Dominio\Sample.Kadastro.Dominio.csproj", "{767BEBEC-8C07-4A1D-9088-F89C43B7F43B}"
@@ -38,8 +36,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Kadastro.Infraestrutura.Persistencia", "Sample.Kadastro.Infraestrutura.Persistencia\Sample.Kadastro.Infraestrutura.Persistencia.csproj", "{C9532547-3844-4A72-A2FF-6187EAA7833C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Kadastro.ServicoDistribuido", "Sample.Kadastro.ServicoDistribuido\Sample.Kadastro.ServicoDistribuido.csproj", "{AFFED738-91DC-4AC4-88E8-7BD0850316AB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Kadastro.UI.Web.Controller", "Sample.Kadastro.UI.Web.Controller\Sample.Kadastro.UI.Web.Controller.csproj", "{172F98B9-B546-4949-A343-7C5DD97CB766}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Kadastro.Infraestrutura.Persistencia.Teste", "Sample.Kadastro.Infraestrutura.Persistencia.Teste\Sample.Kadastro.Infraestrutura.Persistencia.Teste.csproj", "{DFD6E5DF-50E8-48E6-9317-BDE8203F7E53}"
 EndProject
@@ -58,14 +54,6 @@ Global
 		Work|Any CPU = Work|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F82242B5-B961-4984-AC5E-AA5EC52322DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F82242B5-B961-4984-AC5E-AA5EC52322DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F82242B5-B961-4984-AC5E-AA5EC52322DB}.HomeOfficeRelease|Any CPU.ActiveCfg = HomeOfficeRelease|Any CPU
-		{F82242B5-B961-4984-AC5E-AA5EC52322DB}.HomeOfficeRelease|Any CPU.Build.0 = HomeOfficeRelease|Any CPU
-		{F82242B5-B961-4984-AC5E-AA5EC52322DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F82242B5-B961-4984-AC5E-AA5EC52322DB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F82242B5-B961-4984-AC5E-AA5EC52322DB}.Work|Any CPU.ActiveCfg = Work|Any CPU
-		{F82242B5-B961-4984-AC5E-AA5EC52322DB}.Work|Any CPU.Build.0 = Work|Any CPU
 		{2CE992D3-B093-42F7-909D-527BD2E484EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2CE992D3-B093-42F7-909D-527BD2E484EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CE992D3-B093-42F7-909D-527BD2E484EA}.HomeOfficeRelease|Any CPU.ActiveCfg = HomeOfficeRelease|Any CPU
@@ -106,14 +94,6 @@ Global
 		{AFFED738-91DC-4AC4-88E8-7BD0850316AB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AFFED738-91DC-4AC4-88E8-7BD0850316AB}.Work|Any CPU.ActiveCfg = Work|Any CPU
 		{AFFED738-91DC-4AC4-88E8-7BD0850316AB}.Work|Any CPU.Build.0 = Work|Any CPU
-		{172F98B9-B546-4949-A343-7C5DD97CB766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{172F98B9-B546-4949-A343-7C5DD97CB766}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{172F98B9-B546-4949-A343-7C5DD97CB766}.HomeOfficeRelease|Any CPU.ActiveCfg = HomeOfficeRelease|Any CPU
-		{172F98B9-B546-4949-A343-7C5DD97CB766}.HomeOfficeRelease|Any CPU.Build.0 = HomeOfficeRelease|Any CPU
-		{172F98B9-B546-4949-A343-7C5DD97CB766}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{172F98B9-B546-4949-A343-7C5DD97CB766}.Release|Any CPU.Build.0 = Release|Any CPU
-		{172F98B9-B546-4949-A343-7C5DD97CB766}.Work|Any CPU.ActiveCfg = Work|Any CPU
-		{172F98B9-B546-4949-A343-7C5DD97CB766}.Work|Any CPU.Build.0 = Work|Any CPU
 		{DFD6E5DF-50E8-48E6-9317-BDE8203F7E53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DFD6E5DF-50E8-48E6-9317-BDE8203F7E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFD6E5DF-50E8-48E6-9317-BDE8203F7E53}.HomeOfficeRelease|Any CPU.ActiveCfg = HomeOfficeRelease|Any CPU
@@ -155,8 +135,6 @@ Global
 		{DFD6E5DF-50E8-48E6-9317-BDE8203F7E53} = {22D6B85E-4E0E-4296-941C-12AFF252D927}
 		{8E471B9F-B0DC-4070-A1B7-18EAEEE32BC6} = {22D6B85E-4E0E-4296-941C-12AFF252D927}
 		{F57680B6-C454-411A-8C85-0D3E4BACD429} = {22D6B85E-4E0E-4296-941C-12AFF252D927}
-		{F82242B5-B961-4984-AC5E-AA5EC52322DB} = {F4C9F588-1399-4B22-B4DE-4F72EF4028F4}
-		{172F98B9-B546-4949-A343-7C5DD97CB766} = {F4C9F588-1399-4B22-B4DE-4F72EF4028F4}
 		{AFFED738-91DC-4AC4-88E8-7BD0850316AB} = {77012D2A-22CC-4E3B-876F-76D83F30DFA9}
 		{2CE992D3-B093-42F7-909D-527BD2E484EA} = {A8D2573E-7B86-4A25-BF31-4AB13B890548}
 		{767BEBEC-8C07-4A1D-9088-F89C43B7F43B} = {708D9501-CA3E-4A64-9E09-B9D0056C6BB7}

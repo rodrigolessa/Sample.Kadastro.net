@@ -2,15 +2,127 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
     <title>@ViewBag.Title</title>
+
+    <meta name="description" content=".Net Developer, Web Developer, Front-End Developer - Rodrigo Lessa" />
+
+    <!--Google+ Metadata /-->
+    <meta itemprop="name" content="Rodrigo Lessa Web Developer" />
+    <meta itemprop="description" content=".Net Developer, Web Developer, Front-End Developer - Rodrigo Lessa" />
+    <meta name="Keywords" content="Rodrigo Lessa, web, desenvolvedor web, programador, analista de sistemas, análise de sistemas, diagramas uml, asp.net, dot net, .net, asp, php, javascript, actionscript, html, css, xml, web design, flash design, web development, layout, ideas, creative, creativity, interface, navigation, network" />
+    <meta itemprop="image" content="http://rodrigolessa.com/lessa.jpg" />
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    <style type="text/css">
+        table th {
+            text-align: center;
+        }
+
+        table td {
+            text-align: center;
+        }
+
+        .labelDiscreto {
+            color: #ddd;
+        }
+
+        .container-topo {
+            padding-top: 80px;
+            background-color: #F0FAFF;
+        }
+
+        .container-narrow {
+            margin: 0 auto;
+            max-width: 700px;
+        }
+
+            .container-narrow > hr {
+                margin: 30px 0;
+            }
+
+            .container-narrow h2 {
+                font-weight: bold;
+            }
+
+        .container-nivel {
+            background-color: #F0FAFF;
+        }
+
+        .container-divisor-base {
+            background-color: #0088CC;
+        }
+
+            .container-divisor-base h4 {
+                color: #fff;
+            }
+
+        .my-icon {
+            margin-right: 20px;
+        }
+
+        .container-base {
+            min-height: 100px;
+            background-color: #E6E6E6;
+        }
+    </style>
+
 </head>
 <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">controle de horas</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">início</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">usuários <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ListarUsuario.asp">listar</a></li>
+                            <li><a href="ManterUsuario.asp">incluir</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">feriados</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">calendários <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ListarTarefas.asp">tarefas</a></li>
+                            <li><a href="#">dia</a></li>
+                            <li><a href="#">mês</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
     @RenderBody()
 
+    <div class="footer">
+        <p>&copy;Desenvolvido por: rodrigolessa.com</p>
+    </div>
+
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/interface")
+    @Scripts.Render("~/bundles/viewModel")
     @RenderSection("scripts", required: false)
+
 </body>
 </html>

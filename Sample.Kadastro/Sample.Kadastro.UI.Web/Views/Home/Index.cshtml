@@ -10,12 +10,14 @@
     <script>
 
         var config = {
-            
+            urlDefinirPerfil : "@Url.Action("Salvar")",
+            urlDashBoard : "@Url.Action("Index","DashBoard")",
+            initialData : @Html.Raw(Json.Encode(Model))
         };
 
         jQuery(document).ready(function () {
             // Activates knockout.js
-            //ko.applyBindings(new HomeIndexViewModel(config.initialData));
+            ko.applyBindings(new HomeIndexViewModel(config.initialData));
         });
 
     </script>

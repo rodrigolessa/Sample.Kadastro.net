@@ -72,5 +72,15 @@ namespace Sample.Kadastro.Infraestrutura.Persistencia.Teste.Repositories
 
             Assert.IsNull(usuarioExcluido, "Usuário excluido com sucesso!");
         }
+
+        [Test]
+        public void ObterUsuarioPorProcedimento()
+        {
+            var login = "rodrigolessa";
+            var email = "rodrigolessa@teste.com.br";
+            var usuarios = unit.ExecuteQuery<Usuario>("PR_OBTER_USUARIO_POR_LOGIN @Login=@p0", login);
+
+            Assert.AreEqual(email, usuarios.FirstOrDefault().Email, "Email do usuário");
+        }
     }
 }

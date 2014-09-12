@@ -49,9 +49,9 @@ function CadastrarIntervalo(prmEntrada, prmSaida) {
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // Função principal para View
-function HomeIndexViewModel() {
+var HomeIndexViewModel = function(jsonData) {
 
-    var self = this;
+    var self = ko.mapping.fromJS(data);
 
     self.lblDia = ko.observable('Hoje');
 
@@ -128,7 +128,7 @@ function HomeIndexViewModel() {
         });
 
         // Desativando bloqueio por tempo
-        setTimeout($.unblockUI, 2000);
+        setTimeout($.unblockUI, 25000);
 
         var inputEntrada = self.txtEntrada;
         var inputSaida = self.txtSaída;

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Sample.Kadastro.Dominio.Entities;
+using Sample.Kadastro.Aplicacao;
+using Sample.Kadastro.Aplicacao.DTO;
 
 namespace Sample.Kadastro.UI.Web.ViewModel
 {
@@ -13,7 +14,7 @@ namespace Sample.Kadastro.UI.Web.ViewModel
         {
         }
 
-        public string NomeUsuario { get; set; }
-        public List<Ponto> Pontos { get; set; }
+        public UsuarioDTO UsuarioLogado { get; set; }
+        public List<PontoDTO> Pontos { get; set; }
     }
 }

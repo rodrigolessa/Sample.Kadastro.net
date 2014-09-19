@@ -65,7 +65,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\IntervaloDTO.cs" />
     <Compile Include="DTO\ItemListaDTO.cs" />
+    <Compile Include="DTO\PontoDTO.cs" />
     <Compile Include="DTO\TarefaDTO.cs" />
     <Compile Include="DTO\UsuarioDTO.cs" />
     <Compile Include="Extensions\ItemListaExtensions.cs" />

@@ -51,7 +51,7 @@ function CadastrarIntervalo(prmEntrada, prmSaida) {
 // Função principal para View
 var HomeIndexViewModel = function(jsonData) {
 
-    var self = ko.mapping.fromJS(data);
+    var self = ko.mapping.fromJS(jsonData);
 
     self.lblDia = ko.observable('Hoje');
 

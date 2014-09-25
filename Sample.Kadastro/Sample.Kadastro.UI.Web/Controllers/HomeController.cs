@@ -53,9 +53,8 @@ namespace Sample.Kadastro.UI.Web.Controllers
         public ActionResult Index()
         {
             var viewModel = new HomeViewModel();
-            viewModel.UsuarioLogado = 
 
-            return View();
+            return View(viewModel);
         }
 
         //

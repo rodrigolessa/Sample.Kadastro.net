@@ -13,6 +13,7 @@ using Sample.Kadastro.Infraestrutura.Persistencia.UnitOfWork.Mapping;
 
 namespace Sample.Kadastro.Infraestrutura.Persistencia.UnitOfWork
 {
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1063:ImplementIDisposableCorrectly")]
     public class MainUnitOfWork : DbContext, IQueryableUnitOfWork
     {
         #region IDbSet Members

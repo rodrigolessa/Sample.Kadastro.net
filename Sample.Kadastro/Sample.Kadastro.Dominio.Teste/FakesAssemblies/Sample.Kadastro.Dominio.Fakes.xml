@@ -1,0 +1,1556 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sample.Kadastro.Dominio.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Sample.Kadastro.Dominio.Entities.Fakes.ShimEntityBase">
+            <summary>Shim type of Sample.Kadastro.Dominio.Entities.EntityBase</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimEntityBase.#ctor(Sample.Kadastro.Dominio.Entities.EntityBase)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimEntityBase.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimEntityBase.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimEntityBase.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimEntityBase.Constructor">
+            <summary>Sets the shim of EntityBase.EntityBase()</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Entities.Fakes.ShimEntityBase.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo">
+            <summary>Shim type of Sample.Kadastro.Dominio.Entities.Intervalo</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.#ctor(Sample.Kadastro.Dominio.Entities.Intervalo)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.Constructor">
+            <summary>Sets the shim of Intervalo.Intervalo()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.EntradaGet">
+            <summary>Sets the shim of Intervalo.get_Entrada()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.EntradaSetNullableOfTimeSpan">
+            <summary>Sets the shim of Intervalo.set_Entrada(Nullable`1&lt;TimeSpan&gt; value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.IdGet">
+            <summary>Sets the shim of Intervalo.get_Id()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.IdPontoGet">
+            <summary>Sets the shim of Intervalo.get_IdPonto()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.IdPontoSetInt32">
+            <summary>Sets the shim of Intervalo.set_IdPonto(Int32 value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.IdSetInt64">
+            <summary>Sets the shim of Intervalo.set_Id(Int64 value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.PontoGet">
+            <summary>Sets the shim of Intervalo.get_Ponto()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.PontoSetPonto">
+            <summary>Sets the shim of Intervalo.set_Ponto(Ponto value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.SaidaGet">
+            <summary>Sets the shim of Intervalo.get_Saida()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.SaidaSetNullableOfTimeSpan">
+            <summary>Sets the shim of Intervalo.set_Saida(Nullable`1&lt;TimeSpan&gt; value)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.AllInstances.EntradaGet">
+            <summary>Sets the shim of Intervalo.get_Entrada()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.AllInstances.EntradaSetNullableOfTimeSpan">
+            <summary>Sets the shim of Intervalo.set_Entrada(Nullable`1&lt;TimeSpan&gt; value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.AllInstances.IdGet">
+            <summary>Sets the shim of Intervalo.get_Id()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.AllInstances.IdPontoGet">
+            <summary>Sets the shim of Intervalo.get_IdPonto()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.AllInstances.IdPontoSetInt32">
+            <summary>Sets the shim of Intervalo.set_IdPonto(Int32 value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.AllInstances.IdSetInt64">
+            <summary>Sets the shim of Intervalo.set_Id(Int64 value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.AllInstances.PontoGet">
+            <summary>Sets the shim of Intervalo.get_Ponto()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.AllInstances.PontoSetPonto">
+            <summary>Sets the shim of Intervalo.set_Ponto(Ponto value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.AllInstances.SaidaGet">
+            <summary>Sets the shim of Intervalo.get_Saida()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimIntervalo.AllInstances.SaidaSetNullableOfTimeSpan">
+            <summary>Sets the shim of Intervalo.set_Saida(Nullable`1&lt;TimeSpan&gt; value)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto">
+            <summary>Shim type of Sample.Kadastro.Dominio.Entities.Ponto</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.#ctor(Sample.Kadastro.Dominio.Entities.Ponto)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.Constructor">
+            <summary>Sets the shim of Ponto.Ponto()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.DiaGet">
+            <summary>Sets the shim of Ponto.get_Dia()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.DiaSetDateTime">
+            <summary>Sets the shim of Ponto.set_Dia(DateTime value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.HorasGet">
+            <summary>Sets the shim of Ponto.get_Horas()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.HorasSetNullableOfTimeSpan">
+            <summary>Sets the shim of Ponto.set_Horas(Nullable`1&lt;TimeSpan&gt; value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.IdGet">
+            <summary>Sets the shim of Ponto.get_Id()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.IdSetInt32">
+            <summary>Sets the shim of Ponto.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.IdUsuarioGet">
+            <summary>Sets the shim of Ponto.get_IdUsuario()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.IdUsuarioSetInt32">
+            <summary>Sets the shim of Ponto.set_IdUsuario(Int32 value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.IntervalosGet">
+            <summary>Sets the shim of Ponto.get_Intervalos()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.IntervalosSetICollectionOfIntervalo">
+            <summary>Sets the shim of Ponto.set_Intervalos(ICollection`1&lt;Intervalo&gt; value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.UsuarioGet">
+            <summary>Sets the shim of Ponto.get_Usuario()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.UsuarioSetUsuario">
+            <summary>Sets the shim of Ponto.set_Usuario(Usuario value)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.AllInstances.DiaGet">
+            <summary>Sets the shim of Ponto.get_Dia()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.AllInstances.DiaSetDateTime">
+            <summary>Sets the shim of Ponto.set_Dia(DateTime value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.AllInstances.HorasGet">
+            <summary>Sets the shim of Ponto.get_Horas()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.AllInstances.HorasSetNullableOfTimeSpan">
+            <summary>Sets the shim of Ponto.set_Horas(Nullable`1&lt;TimeSpan&gt; value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.AllInstances.IdGet">
+            <summary>Sets the shim of Ponto.get_Id()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.AllInstances.IdSetInt32">
+            <summary>Sets the shim of Ponto.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.AllInstances.IdUsuarioGet">
+            <summary>Sets the shim of Ponto.get_IdUsuario()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.AllInstances.IdUsuarioSetInt32">
+            <summary>Sets the shim of Ponto.set_IdUsuario(Int32 value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.AllInstances.IntervalosGet">
+            <summary>Sets the shim of Ponto.get_Intervalos()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.AllInstances.IntervalosSetICollectionOfIntervalo">
+            <summary>Sets the shim of Ponto.set_Intervalos(ICollection`1&lt;Intervalo&gt; value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.AllInstances.UsuarioGet">
+            <summary>Sets the shim of Ponto.get_Usuario()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimPonto.AllInstances.UsuarioSetUsuario">
+            <summary>Sets the shim of Ponto.set_Usuario(Usuario value)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa">
+            <summary>Shim type of Sample.Kadastro.Dominio.Entities.Tarefa</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.#ctor(Sample.Kadastro.Dominio.Entities.Tarefa)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.Bind(System.ComponentModel.DataAnnotations.IValidatableObject)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.Constructor">
+            <summary>Sets the shim of Tarefa.Tarefa()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.DescricaoGet">
+            <summary>Sets the shim of Tarefa.get_Descricao()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.DescricaoSetString">
+            <summary>Sets the shim of Tarefa.set_Descricao(String value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.ExecutadaGet">
+            <summary>Sets the shim of Tarefa.get_Executada()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.ExecutadaSetNullableOfBoolean">
+            <summary>Sets the shim of Tarefa.set_Executada(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.IdGet">
+            <summary>Sets the shim of Tarefa.get_Id()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.IdSetNullableOfInt32">
+            <summary>Sets the shim of Tarefa.set_Id(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.IdUsuarioGet">
+            <summary>Sets the shim of Tarefa.get_IdUsuario()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.IdUsuarioSetInt32">
+            <summary>Sets the shim of Tarefa.set_IdUsuario(Int32 value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.UsuarioGet">
+            <summary>Sets the shim of Tarefa.get_Usuario()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.UsuarioSetUsuario">
+            <summary>Sets the shim of Tarefa.set_Usuario(Usuario value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.ValidateValidationContext">
+            <summary>Sets the shim of Tarefa.Validate(ValidationContext validationContext)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.AllInstances.DescricaoGet">
+            <summary>Sets the shim of Tarefa.get_Descricao()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.AllInstances.DescricaoSetString">
+            <summary>Sets the shim of Tarefa.set_Descricao(String value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.AllInstances.ExecutadaGet">
+            <summary>Sets the shim of Tarefa.get_Executada()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.AllInstances.ExecutadaSetNullableOfBoolean">
+            <summary>Sets the shim of Tarefa.set_Executada(Nullable`1&lt;Boolean&gt; value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.AllInstances.IdGet">
+            <summary>Sets the shim of Tarefa.get_Id()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.AllInstances.IdSetNullableOfInt32">
+            <summary>Sets the shim of Tarefa.set_Id(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.AllInstances.IdUsuarioGet">
+            <summary>Sets the shim of Tarefa.get_IdUsuario()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.AllInstances.IdUsuarioSetInt32">
+            <summary>Sets the shim of Tarefa.set_IdUsuario(Int32 value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.AllInstances.UsuarioGet">
+            <summary>Sets the shim of Tarefa.get_Usuario()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.AllInstances.UsuarioSetUsuario">
+            <summary>Sets the shim of Tarefa.set_Usuario(Usuario value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimTarefa.AllInstances.ValidateValidationContext">
+            <summary>Sets the shim of Tarefa.Validate(ValidationContext validationContext)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario">
+            <summary>Shim type of Sample.Kadastro.Dominio.Entities.Usuario</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.#ctor(Sample.Kadastro.Dominio.Entities.Usuario)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.Bind(System.ComponentModel.DataAnnotations.IValidatableObject)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.Constructor">
+            <summary>Sets the shim of Usuario.Usuario()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.DescricaoDoStatusGet">
+            <summary>Sets the shim of Usuario.get_DescricaoDoStatus()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.EmailGet">
+            <summary>Sets the shim of Usuario.get_Email()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.EmailSetString">
+            <summary>Sets the shim of Usuario.set_Email(String value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.IdGet">
+            <summary>Sets the shim of Usuario.get_Id()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.IdSetNullableOfInt32">
+            <summary>Sets the shim of Usuario.set_Id(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.LoginGet">
+            <summary>Sets the shim of Usuario.get_Login()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.LoginSetString">
+            <summary>Sets the shim of Usuario.set_Login(String value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.PontosGet">
+            <summary>Sets the shim of Usuario.get_Pontos()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.PontosSetICollectionOfPonto">
+            <summary>Sets the shim of Usuario.set_Pontos(ICollection`1&lt;Ponto&gt; value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.SenhaGet">
+            <summary>Sets the shim of Usuario.get_Senha()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.SenhaSetString">
+            <summary>Sets the shim of Usuario.set_Senha(String value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.StatusGet">
+            <summary>Sets the shim of Usuario.get_Status()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.StatusSetString">
+            <summary>Sets the shim of Usuario.set_Status(String value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.TarefasGet">
+            <summary>Sets the shim of Usuario.get_Tarefas()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.TarefasSetICollectionOfTarefa">
+            <summary>Sets the shim of Usuario.set_Tarefas(ICollection`1&lt;Tarefa&gt; value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.ValidateValidationContext">
+            <summary>Sets the shim of Usuario.Validate(ValidationContext validationContext)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.AllInstances.DescricaoDoStatusGet">
+            <summary>Sets the shim of Usuario.get_DescricaoDoStatus()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.AllInstances.EmailGet">
+            <summary>Sets the shim of Usuario.get_Email()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.AllInstances.EmailSetString">
+            <summary>Sets the shim of Usuario.set_Email(String value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.AllInstances.IdGet">
+            <summary>Sets the shim of Usuario.get_Id()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.AllInstances.IdSetNullableOfInt32">
+            <summary>Sets the shim of Usuario.set_Id(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.AllInstances.LoginGet">
+            <summary>Sets the shim of Usuario.get_Login()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.AllInstances.LoginSetString">
+            <summary>Sets the shim of Usuario.set_Login(String value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.AllInstances.PontosGet">
+            <summary>Sets the shim of Usuario.get_Pontos()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.AllInstances.PontosSetICollectionOfPonto">
+            <summary>Sets the shim of Usuario.set_Pontos(ICollection`1&lt;Ponto&gt; value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.AllInstances.SenhaGet">
+            <summary>Sets the shim of Usuario.get_Senha()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.AllInstances.SenhaSetString">
+            <summary>Sets the shim of Usuario.set_Senha(String value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.AllInstances.StatusGet">
+            <summary>Sets the shim of Usuario.get_Status()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.AllInstances.StatusSetString">
+            <summary>Sets the shim of Usuario.set_Status(String value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.AllInstances.TarefasGet">
+            <summary>Sets the shim of Usuario.get_Tarefas()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.AllInstances.TarefasSetICollectionOfTarefa">
+            <summary>Sets the shim of Usuario.set_Tarefas(ICollection`1&lt;Tarefa&gt; value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.ShimUsuario.AllInstances.ValidateValidationContext">
+            <summary>Sets the shim of Usuario.Validate(ValidationContext validationContext)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Entities.Fakes.StubEntityBase">
+            <summary>Stub type of Sample.Kadastro.Dominio.Entities.EntityBase</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.StubEntityBase.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.StubEntityBase.InitializeStub">
+            <summary>Initializes a new instance of type StubEntityBase</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubEntityBase.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubEntityBase.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubEntityBase.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Entities.Fakes.StubIntervalo">
+            <summary>Stub type of Sample.Kadastro.Dominio.Entities.Intervalo</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.StubIntervalo.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.StubIntervalo.AttachBackingFieldToPonto">
+            <summary>Attaches delegates to emulate StubIntervalo.Ponto as a property with a backing field.</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.StubIntervalo.InitializeStub">
+            <summary>Initializes a new instance of type StubIntervalo</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Entities.Fakes.StubIntervalo.PontoGet">
+            <summary>Sets the stub of Intervalo.get_Ponto()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Entities.Fakes.StubIntervalo.PontoSetPonto">
+            <summary>Sets the stub of Intervalo.set_Ponto(Ponto value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubIntervalo.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubIntervalo.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubIntervalo.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubIntervalo.Ponto">
+            <summary>Sets the stub of Intervalo.get_Ponto()</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Entities.Fakes.StubPonto">
+            <summary>Stub type of Sample.Kadastro.Dominio.Entities.Ponto</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.StubPonto.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.StubPonto.AttachBackingFieldToIntervalos">
+            <summary>Attaches delegates to emulate StubPonto.Intervalos as a property with a backing field.</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.StubPonto.AttachBackingFieldToUsuario">
+            <summary>Attaches delegates to emulate StubPonto.Usuario as a property with a backing field.</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.StubPonto.InitializeStub">
+            <summary>Initializes a new instance of type StubPonto</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Entities.Fakes.StubPonto.IntervalosGet">
+            <summary>Sets the stub of Ponto.get_Intervalos()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Entities.Fakes.StubPonto.IntervalosSetICollectionOfIntervalo">
+            <summary>Sets the stub of Ponto.set_Intervalos(ICollection`1&lt;Intervalo&gt; value)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Entities.Fakes.StubPonto.UsuarioGet">
+            <summary>Sets the stub of Ponto.get_Usuario()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Entities.Fakes.StubPonto.UsuarioSetUsuario">
+            <summary>Sets the stub of Ponto.set_Usuario(Usuario value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubPonto.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubPonto.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubPonto.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubPonto.Intervalos">
+            <summary>Sets the stub of Ponto.get_Intervalos()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubPonto.Usuario">
+            <summary>Sets the stub of Ponto.get_Usuario()</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Entities.Fakes.StubTarefa">
+            <summary>Stub type of Sample.Kadastro.Dominio.Entities.Tarefa</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.StubTarefa.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.StubTarefa.AttachBackingFieldToUsuario">
+            <summary>Attaches delegates to emulate StubTarefa.Usuario as a property with a backing field.</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.StubTarefa.InitializeStub">
+            <summary>Initializes a new instance of type StubTarefa</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Entities.Fakes.StubTarefa.UsuarioGet">
+            <summary>Sets the stub of Tarefa.get_Usuario()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Entities.Fakes.StubTarefa.UsuarioSetUsuario">
+            <summary>Sets the stub of Tarefa.set_Usuario(Usuario value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubTarefa.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubTarefa.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubTarefa.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubTarefa.Usuario">
+            <summary>Sets the stub of Tarefa.get_Usuario()</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Entities.Fakes.StubUsuario">
+            <summary>Stub type of Sample.Kadastro.Dominio.Entities.Usuario</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.StubUsuario.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.StubUsuario.AttachBackingFieldToPontos">
+            <summary>Attaches delegates to emulate StubUsuario.Pontos as a property with a backing field.</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.StubUsuario.AttachBackingFieldToTarefas">
+            <summary>Attaches delegates to emulate StubUsuario.Tarefas as a property with a backing field.</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Entities.Fakes.StubUsuario.DescricaoDoStatusGet">
+            <summary>Sets the stub of Usuario.get_DescricaoDoStatus()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Entities.Fakes.StubUsuario.InitializeStub">
+            <summary>Initializes a new instance of type StubUsuario</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Entities.Fakes.StubUsuario.PontosGet">
+            <summary>Sets the stub of Usuario.get_Pontos()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Entities.Fakes.StubUsuario.PontosSetICollectionOfPonto">
+            <summary>Sets the stub of Usuario.set_Pontos(ICollection`1&lt;Ponto&gt; value)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Entities.Fakes.StubUsuario.TarefasGet">
+            <summary>Sets the stub of Usuario.get_Tarefas()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Entities.Fakes.StubUsuario.TarefasSetICollectionOfTarefa">
+            <summary>Sets the stub of Usuario.set_Tarefas(ICollection`1&lt;Tarefa&gt; value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubUsuario.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubUsuario.DescricaoDoStatus">
+            <summary>Sets the stub of Usuario.get_DescricaoDoStatus()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubUsuario.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubUsuario.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubUsuario.Pontos">
+            <summary>Sets the stub of Usuario.get_Pontos()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Entities.Fakes.StubUsuario.Tarefas">
+            <summary>Sets the stub of Usuario.get_Tarefas()</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Extensions.Fakes.ShimEnumExtensions">
+            <summary>Shim type of Sample.Kadastro.Dominio.Extensions.EnumExtensions</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Extensions.Fakes.ShimEnumExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Extensions.Fakes.ShimEnumExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Extensions.Fakes.ShimEnumExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Extensions.Fakes.ShimEnumExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Extensions.Fakes.ShimEnumExtensions.ToItemListaModelEnum">
+            <summary>Sets the shim of EnumExtensions.ToItemListaModel(Enum value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Extensions.Fakes.ShimEnumExtensions.ToItemListaModelType">
+            <summary>Sets the shim of EnumExtensions.ToItemListaModel(Type enumerador)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Extensions.Fakes.ShimEnumExtensions._ToItemListaModelb__0KeyValuePairOfObjectString">
+            <summary>Sets the shim of EnumExtensions.&lt;ToItemListaModel&gt;b__0(KeyValuePair`2&lt;Object,String&gt; o)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Extensions.Fakes.ShimValidatorExtensions">
+            <summary>Shim type of Sample.Kadastro.Dominio.Extensions.ValidatorExtensions</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Extensions.Fakes.ShimValidatorExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Extensions.Fakes.ShimValidatorExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Extensions.Fakes.ShimValidatorExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Extensions.Fakes.ShimValidatorExtensions.FazerSeForValidoOf1EntityBaseValidatorExtensionsExecutarSeValido``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Sample.Kadastro.Dominio.Entities.EntityBase,Sample.Kadastro.Dominio.Extensions.ValidatorExtensions.ExecutarSeValido,System.Collections.Generic.IEnumerable{System.String}})">
+            <summary>Sets the shim of ValidatorExtensions.FazerSeForValido(EntityBase entidadeASerValidada, ExecutarSeValido executarSeValido)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Extensions.Fakes.ShimValidatorExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Extensions.Fakes.ShimValidatorExtensions.ExistemErrosIEnumerableOfString">
+            <summary>Sets the shim of ValidatorExtensions.ExistemErros(IEnumerable`1&lt;String&gt; erros)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Fakes.ShimRepository`1">
+            <summary>Shim type of Sample.Kadastro.Dominio.Repository`1</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.#ctor(Sample.Kadastro.Dominio.Repository{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.Bind(Sample.Kadastro.Dominio.IRepository{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.AddT0">
+            <summary>Sets the shim of Repository`1.Add(!0 item)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.ConstructorIQueryableUnitOfWork">
+            <summary>Sets the shim of Repository`1.Repository`1(IQueryableUnitOfWork unitOfWork)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.Dispose">
+            <summary>Sets the shim of Repository`1.Dispose()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.GetAll">
+            <summary>Sets the shim of Repository`1.GetAll()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.GetFilteredExpressionOfFuncOfT0Boolean">
+            <summary>Sets the shim of Repository`1.GetFiltered(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filter)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.GetInt32">
+            <summary>Sets the shim of Repository`1.Get(Int32 id)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.GetSet">
+            <summary>Sets the shim of Repository`1.GetSet()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.MergeT0T0">
+            <summary>Sets the shim of Repository`1.Merge(!0 persisted, !0 current)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.ModifyT0">
+            <summary>Sets the shim of Repository`1.Modify(!0 item)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.RemoveT0">
+            <summary>Sets the shim of Repository`1.Remove(!0 item)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.TrackItemT0">
+            <summary>Sets the shim of Repository`1.TrackItem(!0 item)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.UnitOfWorkGet">
+            <summary>Sets the shim of Repository`1.get_UnitOfWork()</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.AllInstances.AddT0">
+            <summary>Sets the shim of Repository`1.Add(!0 item)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.AllInstances.Dispose">
+            <summary>Sets the shim of Repository`1.Dispose()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.AllInstances.GetAll">
+            <summary>Sets the shim of Repository`1.GetAll()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.AllInstances.GetFilteredExpressionOfFuncOfT0Boolean">
+            <summary>Sets the shim of Repository`1.GetFiltered(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filter)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.AllInstances.GetInt32">
+            <summary>Sets the shim of Repository`1.Get(Int32 id)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.AllInstances.GetSet">
+            <summary>Sets the shim of Repository`1.GetSet()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.AllInstances.MergeT0T0">
+            <summary>Sets the shim of Repository`1.Merge(!0 persisted, !0 current)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.AllInstances.ModifyT0">
+            <summary>Sets the shim of Repository`1.Modify(!0 item)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.AllInstances.RemoveT0">
+            <summary>Sets the shim of Repository`1.Remove(!0 item)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.AllInstances.TrackItemT0">
+            <summary>Sets the shim of Repository`1.TrackItem(!0 item)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.ShimRepository`1.AllInstances.UnitOfWorkGet">
+            <summary>Sets the shim of Repository`1.get_UnitOfWork()</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork">
+            <summary>Stub type of Sample.Kadastro.Dominio.IQueryableUnitOfWork</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.#ctor">
+            <summary>Initializes a new instance of type StubIQueryableUnitOfWork</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.ApplyCurrentValuesOf1M0M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0,``0})">
+            <summary>Sets stubs of ApplyCurrentValues(!!0 original, !!0 current)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.AttachOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0})">
+            <summary>Sets stubs of Attach(!!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.Commit">
+            <summary>Sets the stub of IUnitOfWork.Commit()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.CommitAndRefreshChanges">
+            <summary>Sets the stub of IUnitOfWork.CommitAndRefreshChanges()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.CreateSetOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Data.Entity.IDbSet{``0}})">
+            <summary>Sets stubs of CreateSet()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.ExecuteCommandStringObjectArray">
+            <summary>Sets the stub of ISql.ExecuteCommand(String sqlCommand, Object[] parameters)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.ExecuteQueryOf1StringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,System.Object[],System.Collections.Generic.IEnumerable{``0}})">
+            <summary>Sets stubs of ExecuteQuery(String sqlQuery, Object[] parameters)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.RollbackChanges">
+            <summary>Sets the stub of IUnitOfWork.RollbackChanges()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.skd::Sample#Kadastro#Dominio#IQueryableUnitOfWork#ApplyCurrentValues``1(``0,``0)">
+            <summary>Sets the stub of IQueryableUnitOfWork.ApplyCurrentValues(!!0 original, !!0 current)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.skd::Sample#Kadastro#Dominio#IQueryableUnitOfWork#Attach``1(``0)">
+            <summary>Sets the stub of IQueryableUnitOfWork.Attach(!!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.skd::Sample#Kadastro#Dominio#IQueryableUnitOfWork#CreateSet``1">
+            <summary>Sets the stub of IQueryableUnitOfWork.CreateSet()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.skd::Sample#Kadastro#Dominio#IQueryableUnitOfWork#SetModified``1(``0)">
+            <summary>Sets the stub of IQueryableUnitOfWork.SetModified(!!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.skd::Sample#Kadastro#Dominio#ISql#ExecuteCommand(System.String,System.Object[])">
+            <summary>Sets the stub of ISql.ExecuteCommand(String sqlCommand, Object[] parameters)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.skd::Sample#Kadastro#Dominio#ISql#ExecuteQuery``1(System.String,System.Object[])">
+            <summary>Sets the stub of ISql.ExecuteQuery(String sqlQuery, Object[] parameters)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.skd::Sample#Kadastro#Dominio#IUnitOfWork#Commit">
+            <summary>Sets the stub of IUnitOfWork.Commit()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.skd::Sample#Kadastro#Dominio#IUnitOfWork#CommitAndRefreshChanges">
+            <summary>Sets the stub of IUnitOfWork.CommitAndRefreshChanges()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.skd::Sample#Kadastro#Dominio#IUnitOfWork#RollbackChanges">
+            <summary>Sets the stub of IUnitOfWork.RollbackChanges()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.SetModifiedOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0})">
+            <summary>Sets stubs of SetModified(!!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIQueryableUnitOfWork.global::System#IDisposable#Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Fakes.StubIRepository`1">
+            <summary>Stub type of Sample.Kadastro.Dominio.IRepository`1</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.#ctor">
+            <summary>Initializes a new instance of type StubIRepository</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.AddT0">
+            <summary>Sets the stub of IRepository`1.Add(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.GetAll">
+            <summary>Sets the stub of IRepository`1.GetAll()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.GetFilteredExpressionOfFuncOfT0Boolean">
+            <summary>Sets the stub of IRepository`1.GetFiltered(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filter)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.GetInt32">
+            <summary>Sets the stub of IRepository`1.Get(Int32 id)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.MergeT0T0">
+            <summary>Sets the stub of IRepository`1.Merge(!0 persisted, !0 current)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.ModifyT0">
+            <summary>Sets the stub of IRepository`1.Modify(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.RemoveT0">
+            <summary>Sets the stub of IRepository`1.Remove(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.skd::Sample#Kadastro#Dominio#IRepository{TEntity}#Add(`0)">
+            <summary>Sets the stub of IRepository`1.Add(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.skd::Sample#Kadastro#Dominio#IRepository{TEntity}#Get(System.Int32)">
+            <summary>Sets the stub of IRepository`1.Get(Int32 id)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.skd::Sample#Kadastro#Dominio#IRepository{TEntity}#GetAll">
+            <summary>Sets the stub of IRepository`1.GetAll()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.skd::Sample#Kadastro#Dominio#IRepository{TEntity}#GetFiltered(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>Sets the stub of IRepository`1.GetFiltered(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filter)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.skd::Sample#Kadastro#Dominio#IRepository{TEntity}#Merge(`0,`0)">
+            <summary>Sets the stub of IRepository`1.Merge(!0 persisted, !0 current)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.skd::Sample#Kadastro#Dominio#IRepository{TEntity}#Modify(`0)">
+            <summary>Sets the stub of IRepository`1.Modify(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.skd::Sample#Kadastro#Dominio#IRepository{TEntity}#Remove(`0)">
+            <summary>Sets the stub of IRepository`1.Remove(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.skd::Sample#Kadastro#Dominio#IRepository{TEntity}#TrackItem(`0)">
+            <summary>Sets the stub of IRepository`1.TrackItem(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.global::System#IDisposable#Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.TrackItemT0">
+            <summary>Sets the stub of IRepository`1.TrackItem(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.UnitOfWorkGet">
+            <summary>Sets the stub of IRepository`1.get_UnitOfWork()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.StubIRepository`1.skd::Sample#Kadastro#Dominio#IRepository{TEntity}#UnitOfWork">
+            <summary>Sets the stub of IRepository`1.get_UnitOfWork()</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Fakes.StubISql">
+            <summary>Stub type of Sample.Kadastro.Dominio.ISql</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubISql.#ctor">
+            <summary>Initializes a new instance of type StubISql</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubISql.ExecuteCommandStringObjectArray">
+            <summary>Sets the stub of ISql.ExecuteCommand(String sqlCommand, Object[] parameters)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubISql.ExecuteQueryOf1StringObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,System.Object[],System.Collections.Generic.IEnumerable{``0}})">
+            <summary>Sets stubs of ExecuteQuery(String sqlQuery, Object[] parameters)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubISql.skd::Sample#Kadastro#Dominio#ISql#ExecuteCommand(System.String,System.Object[])">
+            <summary>Sets the stub of ISql.ExecuteCommand(String sqlCommand, Object[] parameters)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubISql.skd::Sample#Kadastro#Dominio#ISql#ExecuteQuery``1(System.String,System.Object[])">
+            <summary>Sets the stub of ISql.ExecuteQuery(String sqlQuery, Object[] parameters)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Fakes.StubIUnitOfWork">
+            <summary>Stub type of Sample.Kadastro.Dominio.IUnitOfWork</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIUnitOfWork.#ctor">
+            <summary>Initializes a new instance of type StubIUnitOfWork</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIUnitOfWork.Commit">
+            <summary>Sets the stub of IUnitOfWork.Commit()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIUnitOfWork.CommitAndRefreshChanges">
+            <summary>Sets the stub of IUnitOfWork.CommitAndRefreshChanges()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIUnitOfWork.Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubIUnitOfWork.RollbackChanges">
+            <summary>Sets the stub of IUnitOfWork.RollbackChanges()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIUnitOfWork.skd::Sample#Kadastro#Dominio#IUnitOfWork#Commit">
+            <summary>Sets the stub of IUnitOfWork.Commit()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIUnitOfWork.skd::Sample#Kadastro#Dominio#IUnitOfWork#CommitAndRefreshChanges">
+            <summary>Sets the stub of IUnitOfWork.CommitAndRefreshChanges()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIUnitOfWork.skd::Sample#Kadastro#Dominio#IUnitOfWork#RollbackChanges">
+            <summary>Sets the stub of IUnitOfWork.RollbackChanges()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubIUnitOfWork.global::System#IDisposable#Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Fakes.StubRepository`1">
+            <summary>Stub type of Sample.Kadastro.Dominio.Repository`1</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubRepository`1.#ctor(Sample.Kadastro.Dominio.IQueryableUnitOfWork)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubRepository`1.Add(`0)">
+            <summary>Sets the stub of Repository`1.Add(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubRepository`1.AddT0">
+            <summary>Sets the stub of Repository`1.Add(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubRepository`1.Get(System.Int32)">
+            <summary>Sets the stub of Repository`1.Get(Int32 id)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubRepository`1.GetAll">
+            <summary>Sets the stub of Repository`1.GetAll()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubRepository`1.GetAll01">
+            <summary>Sets the stub of Repository`1.GetAll()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubRepository`1.GetFiltered(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>Sets the stub of Repository`1.GetFiltered(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filter)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubRepository`1.GetFilteredExpressionOfFuncOfT0Boolean">
+            <summary>Sets the stub of Repository`1.GetFiltered(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filter)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubRepository`1.GetInt32">
+            <summary>Sets the stub of Repository`1.Get(Int32 id)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubRepository`1.InitializeStub">
+            <summary>Initializes a new instance of type StubRepository</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubRepository`1.Merge(`0,`0)">
+            <summary>Sets the stub of Repository`1.Merge(!0 persisted, !0 current)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubRepository`1.MergeT0T0">
+            <summary>Sets the stub of Repository`1.Merge(!0 persisted, !0 current)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubRepository`1.Modify(`0)">
+            <summary>Sets the stub of Repository`1.Modify(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubRepository`1.ModifyT0">
+            <summary>Sets the stub of Repository`1.Modify(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubRepository`1.Remove(`0)">
+            <summary>Sets the stub of Repository`1.Remove(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubRepository`1.RemoveT0">
+            <summary>Sets the stub of Repository`1.Remove(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Fakes.StubRepository`1.TrackItem(`0)">
+            <summary>Sets the stub of Repository`1.TrackItem(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Fakes.StubRepository`1.TrackItemT0">
+            <summary>Sets the stub of Repository`1.TrackItem(!0 item)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.StubRepository`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.StubRepository`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Fakes.StubRepository`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Model.Fakes.ShimItemListaModel">
+            <summary>Shim type of Sample.Kadastro.Dominio.Model.ItemListaModel</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Model.Fakes.ShimItemListaModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Model.Fakes.ShimItemListaModel.#ctor(Sample.Kadastro.Dominio.Model.ItemListaModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Model.Fakes.ShimItemListaModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Model.Fakes.ShimItemListaModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Model.Fakes.ShimItemListaModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Model.Fakes.ShimItemListaModel.Constructor">
+            <summary>Sets the shim of ItemListaModel.ItemListaModel()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Model.Fakes.ShimItemListaModel.ConstructorInt64String">
+            <summary>Sets the shim of ItemListaModel.ItemListaModel(Int64 id, String descricao)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Model.Fakes.ShimItemListaModel.DescricaoGet">
+            <summary>Sets the shim of ItemListaModel.get_Descricao()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Model.Fakes.ShimItemListaModel.DescricaoSetString">
+            <summary>Sets the shim of ItemListaModel.set_Descricao(String value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Model.Fakes.ShimItemListaModel.IdGet">
+            <summary>Sets the shim of ItemListaModel.get_Id()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Model.Fakes.ShimItemListaModel.IdSetInt64">
+            <summary>Sets the shim of ItemListaModel.set_Id(Int64 value)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Model.Fakes.ShimItemListaModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Model.Fakes.ShimItemListaModel.AllInstances.DescricaoGet">
+            <summary>Sets the shim of ItemListaModel.get_Descricao()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Model.Fakes.ShimItemListaModel.AllInstances.DescricaoSetString">
+            <summary>Sets the shim of ItemListaModel.set_Descricao(String value)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Model.Fakes.ShimItemListaModel.AllInstances.IdGet">
+            <summary>Sets the shim of ItemListaModel.get_Id()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Model.Fakes.ShimItemListaModel.AllInstances.IdSetInt64">
+            <summary>Sets the shim of ItemListaModel.set_Id(Int64 value)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Model.Fakes.StubItemListaModel">
+            <summary>Stub type of Sample.Kadastro.Dominio.Model.ItemListaModel</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Model.Fakes.StubItemListaModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Model.Fakes.StubItemListaModel.#ctor(System.Int64,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Model.Fakes.StubItemListaModel.InitializeStub">
+            <summary>Initializes a new instance of type StubItemListaModel</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Model.Fakes.StubItemListaModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Model.Fakes.StubItemListaModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Model.Fakes.StubItemListaModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository">
+            <summary>Stub type of Sample.Kadastro.Dominio.Repositories.IIntervaloRepository</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.#ctor">
+            <summary>Initializes a new instance of type StubIIntervaloRepository</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.AddIntervalo">
+            <summary>Sets the stub of IRepository`1.Add(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.GetAll">
+            <summary>Sets the stub of IRepository`1.GetAll()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.GetFilteredExpressionOfFuncOfIntervaloBoolean">
+            <summary>Sets the stub of IRepository`1.GetFiltered(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filter)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.GetInt32">
+            <summary>Sets the stub of IRepository`1.Get(Int32 id)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.MergeIntervaloIntervalo">
+            <summary>Sets the stub of IRepository`1.Merge(!0 persisted, !0 current)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.ModifyIntervalo">
+            <summary>Sets the stub of IRepository`1.Modify(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.RemoveIntervalo">
+            <summary>Sets the stub of IRepository`1.Remove(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Intervalo}#Add(Sample.Kadastro.Dominio.Entities.Intervalo)">
+            <summary>Sets the stub of IRepository`1.Add(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Intervalo}#Get(System.Int32)">
+            <summary>Sets the stub of IRepository`1.Get(Int32 id)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Intervalo}#GetAll">
+            <summary>Sets the stub of IRepository`1.GetAll()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Intervalo}#GetFiltered(System.Linq.Expressions.Expression{System.Func{Sample.Kadastro.Dominio.Entities.Intervalo,System.Boolean}})">
+            <summary>Sets the stub of IRepository`1.GetFiltered(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filter)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Intervalo}#Merge(Sample.Kadastro.Dominio.Entities.Intervalo,Sample.Kadastro.Dominio.Entities.Intervalo)">
+            <summary>Sets the stub of IRepository`1.Merge(!0 persisted, !0 current)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Intervalo}#Modify(Sample.Kadastro.Dominio.Entities.Intervalo)">
+            <summary>Sets the stub of IRepository`1.Modify(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Intervalo}#Remove(Sample.Kadastro.Dominio.Entities.Intervalo)">
+            <summary>Sets the stub of IRepository`1.Remove(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Intervalo}#TrackItem(Sample.Kadastro.Dominio.Entities.Intervalo)">
+            <summary>Sets the stub of IRepository`1.TrackItem(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.global::System#IDisposable#Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.TrackItemIntervalo">
+            <summary>Sets the stub of IRepository`1.TrackItem(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.UnitOfWorkGet">
+            <summary>Sets the stub of IRepository`1.get_UnitOfWork()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Repositories.Fakes.StubIIntervaloRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Intervalo}#UnitOfWork">
+            <summary>Sets the stub of IRepository`1.get_UnitOfWork()</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository">
+            <summary>Stub type of Sample.Kadastro.Dominio.Repositories.IPontoRepository</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.#ctor">
+            <summary>Initializes a new instance of type StubIPontoRepository</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.AddPonto">
+            <summary>Sets the stub of IRepository`1.Add(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.GetAll">
+            <summary>Sets the stub of IRepository`1.GetAll()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.GetFilteredExpressionOfFuncOfPontoBoolean">
+            <summary>Sets the stub of IRepository`1.GetFiltered(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filter)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.GetInt32">
+            <summary>Sets the stub of IRepository`1.Get(Int32 id)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.MergePontoPonto">
+            <summary>Sets the stub of IRepository`1.Merge(!0 persisted, !0 current)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.ModifyPonto">
+            <summary>Sets the stub of IRepository`1.Modify(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.RemovePonto">
+            <summary>Sets the stub of IRepository`1.Remove(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Ponto}#Add(Sample.Kadastro.Dominio.Entities.Ponto)">
+            <summary>Sets the stub of IRepository`1.Add(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Ponto}#Get(System.Int32)">
+            <summary>Sets the stub of IRepository`1.Get(Int32 id)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Ponto}#GetAll">
+            <summary>Sets the stub of IRepository`1.GetAll()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Ponto}#GetFiltered(System.Linq.Expressions.Expression{System.Func{Sample.Kadastro.Dominio.Entities.Ponto,System.Boolean}})">
+            <summary>Sets the stub of IRepository`1.GetFiltered(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filter)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Ponto}#Merge(Sample.Kadastro.Dominio.Entities.Ponto,Sample.Kadastro.Dominio.Entities.Ponto)">
+            <summary>Sets the stub of IRepository`1.Merge(!0 persisted, !0 current)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Ponto}#Modify(Sample.Kadastro.Dominio.Entities.Ponto)">
+            <summary>Sets the stub of IRepository`1.Modify(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Ponto}#Remove(Sample.Kadastro.Dominio.Entities.Ponto)">
+            <summary>Sets the stub of IRepository`1.Remove(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Ponto}#TrackItem(Sample.Kadastro.Dominio.Entities.Ponto)">
+            <summary>Sets the stub of IRepository`1.TrackItem(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.global::System#IDisposable#Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.TrackItemPonto">
+            <summary>Sets the stub of IRepository`1.TrackItem(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.UnitOfWorkGet">
+            <summary>Sets the stub of IRepository`1.get_UnitOfWork()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Repositories.Fakes.StubIPontoRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Ponto}#UnitOfWork">
+            <summary>Sets the stub of IRepository`1.get_UnitOfWork()</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository">
+            <summary>Stub type of Sample.Kadastro.Dominio.Repositories.ITarefaRepository</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.#ctor">
+            <summary>Initializes a new instance of type StubITarefaRepository</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.AddTarefa">
+            <summary>Sets the stub of IRepository`1.Add(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.GetAll">
+            <summary>Sets the stub of IRepository`1.GetAll()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.GetFilteredExpressionOfFuncOfTarefaBoolean">
+            <summary>Sets the stub of IRepository`1.GetFiltered(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filter)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.GetInt32">
+            <summary>Sets the stub of IRepository`1.Get(Int32 id)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.MergeTarefaTarefa">
+            <summary>Sets the stub of IRepository`1.Merge(!0 persisted, !0 current)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.ModifyTarefa">
+            <summary>Sets the stub of IRepository`1.Modify(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.RemoveTarefa">
+            <summary>Sets the stub of IRepository`1.Remove(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Tarefa}#Add(Sample.Kadastro.Dominio.Entities.Tarefa)">
+            <summary>Sets the stub of IRepository`1.Add(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Tarefa}#Get(System.Int32)">
+            <summary>Sets the stub of IRepository`1.Get(Int32 id)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Tarefa}#GetAll">
+            <summary>Sets the stub of IRepository`1.GetAll()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Tarefa}#GetFiltered(System.Linq.Expressions.Expression{System.Func{Sample.Kadastro.Dominio.Entities.Tarefa,System.Boolean}})">
+            <summary>Sets the stub of IRepository`1.GetFiltered(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filter)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Tarefa}#Merge(Sample.Kadastro.Dominio.Entities.Tarefa,Sample.Kadastro.Dominio.Entities.Tarefa)">
+            <summary>Sets the stub of IRepository`1.Merge(!0 persisted, !0 current)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Tarefa}#Modify(Sample.Kadastro.Dominio.Entities.Tarefa)">
+            <summary>Sets the stub of IRepository`1.Modify(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Tarefa}#Remove(Sample.Kadastro.Dominio.Entities.Tarefa)">
+            <summary>Sets the stub of IRepository`1.Remove(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Tarefa}#TrackItem(Sample.Kadastro.Dominio.Entities.Tarefa)">
+            <summary>Sets the stub of IRepository`1.TrackItem(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.global::System#IDisposable#Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.TrackItemTarefa">
+            <summary>Sets the stub of IRepository`1.TrackItem(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.UnitOfWorkGet">
+            <summary>Sets the stub of IRepository`1.get_UnitOfWork()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Repositories.Fakes.StubITarefaRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Tarefa}#UnitOfWork">
+            <summary>Sets the stub of IRepository`1.get_UnitOfWork()</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository">
+            <summary>Stub type of Sample.Kadastro.Dominio.Repositories.IUsuarioRepository</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.#ctor">
+            <summary>Initializes a new instance of type StubIUsuarioRepository</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.AddUsuario">
+            <summary>Sets the stub of IRepository`1.Add(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.GetAll">
+            <summary>Sets the stub of IRepository`1.GetAll()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.GetFilteredExpressionOfFuncOfUsuarioBoolean">
+            <summary>Sets the stub of IRepository`1.GetFiltered(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filter)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.GetInt32">
+            <summary>Sets the stub of IRepository`1.Get(Int32 id)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.MergeUsuarioUsuario">
+            <summary>Sets the stub of IRepository`1.Merge(!0 persisted, !0 current)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.ModifyUsuario">
+            <summary>Sets the stub of IRepository`1.Modify(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.ObterPeloLoginString">
+            <summary>Sets the stub of IUsuarioRepository.ObterPeloLogin(String login)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.RemoveUsuario">
+            <summary>Sets the stub of IRepository`1.Remove(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Usuario}#Add(Sample.Kadastro.Dominio.Entities.Usuario)">
+            <summary>Sets the stub of IRepository`1.Add(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Usuario}#Get(System.Int32)">
+            <summary>Sets the stub of IRepository`1.Get(Int32 id)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Usuario}#GetAll">
+            <summary>Sets the stub of IRepository`1.GetAll()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Usuario}#GetFiltered(System.Linq.Expressions.Expression{System.Func{Sample.Kadastro.Dominio.Entities.Usuario,System.Boolean}})">
+            <summary>Sets the stub of IRepository`1.GetFiltered(Expression`1&lt;Func`2&lt;!0,Boolean&gt;&gt; filter)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Usuario}#Merge(Sample.Kadastro.Dominio.Entities.Usuario,Sample.Kadastro.Dominio.Entities.Usuario)">
+            <summary>Sets the stub of IRepository`1.Merge(!0 persisted, !0 current)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Usuario}#Modify(Sample.Kadastro.Dominio.Entities.Usuario)">
+            <summary>Sets the stub of IRepository`1.Modify(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Usuario}#Remove(Sample.Kadastro.Dominio.Entities.Usuario)">
+            <summary>Sets the stub of IRepository`1.Remove(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Usuario}#TrackItem(Sample.Kadastro.Dominio.Entities.Usuario)">
+            <summary>Sets the stub of IRepository`1.TrackItem(!0 item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.skd::Sample#Kadastro#Dominio#Repositories#IUsuarioRepository#ObterPeloLogin(System.String)">
+            <summary>Sets the stub of IUsuarioRepository.ObterPeloLogin(String login)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.global::System#IDisposable#Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.TrackItemUsuario">
+            <summary>Sets the stub of IRepository`1.TrackItem(!0 item)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.UnitOfWorkGet">
+            <summary>Sets the stub of IRepository`1.get_UnitOfWork()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Repositories.Fakes.StubIUsuarioRepository.skd::Sample#Kadastro#Dominio#IRepository{Sample#Kadastro#Dominio#Entities#Usuario}#UnitOfWork">
+            <summary>Sets the stub of IRepository`1.get_UnitOfWork()</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Services.Fakes.ShimTarefaService">
+            <summary>Shim type of Sample.Kadastro.Dominio.Services.TarefaService</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.ShimTarefaService.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.ShimTarefaService.#ctor(Sample.Kadastro.Dominio.Services.TarefaService)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.ShimTarefaService.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.ShimTarefaService.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.ShimTarefaService.Bind(Sample.Kadastro.Dominio.Services.ITarefaService)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimTarefaService.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimTarefaService.ConstructorITarefaRepository">
+            <summary>Sets the shim of TarefaService.TarefaService(ITarefaRepository tarefaRepository)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimTarefaService.ExcluirInt32">
+            <summary>Sets the shim of TarefaService.Excluir(Int32 id)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimTarefaService.ExecutarInt32">
+            <summary>Sets the shim of TarefaService.Executar(Int32 id)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimTarefaService.ObterString">
+            <summary>Sets the shim of TarefaService.Obter(String login)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimTarefaService.SalvarTarefa">
+            <summary>Sets the shim of TarefaService.Salvar(Tarefa item)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Services.Fakes.ShimTarefaService.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimTarefaService.AllInstances.ExcluirInt32">
+            <summary>Sets the shim of TarefaService.Excluir(Int32 id)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimTarefaService.AllInstances.ExecutarInt32">
+            <summary>Sets the shim of TarefaService.Executar(Int32 id)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimTarefaService.AllInstances.ObterString">
+            <summary>Sets the shim of TarefaService.Obter(String login)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimTarefaService.AllInstances.SalvarTarefa">
+            <summary>Sets the shim of TarefaService.Salvar(Tarefa item)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService">
+            <summary>Shim type of Sample.Kadastro.Dominio.Services.UsuarioService</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.#ctor(Sample.Kadastro.Dominio.Services.UsuarioService)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.Bind(Sample.Kadastro.Dominio.Services.IUsuarioService)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.AutenticarStringString">
+            <summary>Sets the shim of UsuarioService.Autenticar(String login, String senha)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.ConstructorIUsuarioRepository">
+            <summary>Sets the shim of UsuarioService.UsuarioService(IUsuarioRepository usuarioRepository)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.ExcluirInt32">
+            <summary>Sets the shim of UsuarioService.Excluir(Int32 id)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.Obter">
+            <summary>Sets the shim of UsuarioService.Obter()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.ObterInt32">
+            <summary>Sets the shim of UsuarioService.Obter(Int32 id)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.ObterPeloLoginString">
+            <summary>Sets the shim of UsuarioService.ObterPeloLogin(String login)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.ObterPerfilDeAcesso">
+            <summary>Sets the shim of UsuarioService.ObterPerfilDeAcesso()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.SalvarUsuario">
+            <summary>Sets the shim of UsuarioService.Salvar(Usuario item)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.AllInstances.AutenticarStringString">
+            <summary>Sets the shim of UsuarioService.Autenticar(String login, String senha)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.AllInstances.ExcluirInt32">
+            <summary>Sets the shim of UsuarioService.Excluir(Int32 id)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.AllInstances.Obter">
+            <summary>Sets the shim of UsuarioService.Obter()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.AllInstances.ObterInt32">
+            <summary>Sets the shim of UsuarioService.Obter(Int32 id)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.AllInstances.ObterPeloLoginString">
+            <summary>Sets the shim of UsuarioService.ObterPeloLogin(String login)</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.AllInstances.ObterPerfilDeAcesso">
+            <summary>Sets the shim of UsuarioService.ObterPerfilDeAcesso()</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.ShimUsuarioService.AllInstances.SalvarUsuario">
+            <summary>Sets the shim of UsuarioService.Salvar(Usuario item)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Services.Fakes.StubITarefaService">
+            <summary>Stub type of Sample.Kadastro.Dominio.Services.ITarefaService</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.StubITarefaService.#ctor">
+            <summary>Initializes a new instance of type StubITarefaService</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Services.Fakes.StubITarefaService.ExcluirInt32">
+            <summary>Sets the stub of ITarefaService.Excluir(Int32 id)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Services.Fakes.StubITarefaService.ExecutarInt32">
+            <summary>Sets the stub of ITarefaService.Executar(Int32 id)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Services.Fakes.StubITarefaService.ObterString">
+            <summary>Sets the stub of ITarefaService.Obter(String login)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Services.Fakes.StubITarefaService.SalvarTarefa">
+            <summary>Sets the stub of ITarefaService.Salvar(Tarefa item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.StubITarefaService.skd::Sample#Kadastro#Dominio#Services#ITarefaService#Excluir(System.Int32)">
+            <summary>Sets the stub of ITarefaService.Excluir(Int32 id)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.StubITarefaService.skd::Sample#Kadastro#Dominio#Services#ITarefaService#Executar(System.Int32)">
+            <summary>Sets the stub of ITarefaService.Executar(Int32 id)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.StubITarefaService.skd::Sample#Kadastro#Dominio#Services#ITarefaService#Obter(System.String)">
+            <summary>Sets the stub of ITarefaService.Obter(String login)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.StubITarefaService.skd::Sample#Kadastro#Dominio#Services#ITarefaService#Salvar(Sample.Kadastro.Dominio.Entities.Tarefa)">
+            <summary>Sets the stub of ITarefaService.Salvar(Tarefa item)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Services.Fakes.StubIUsuarioService">
+            <summary>Stub type of Sample.Kadastro.Dominio.Services.IUsuarioService</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.StubIUsuarioService.#ctor">
+            <summary>Initializes a new instance of type StubIUsuarioService</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Services.Fakes.StubIUsuarioService.AutenticarStringString">
+            <summary>Sets the stub of IUsuarioService.Autenticar(String login, String senha)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Services.Fakes.StubIUsuarioService.ExcluirInt32">
+            <summary>Sets the stub of IUsuarioService.Excluir(Int32 id)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Services.Fakes.StubIUsuarioService.Obter">
+            <summary>Sets the stub of IUsuarioService.Obter()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Services.Fakes.StubIUsuarioService.ObterInt32">
+            <summary>Sets the stub of IUsuarioService.Obter(Int32 id)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Services.Fakes.StubIUsuarioService.ObterPeloLoginString">
+            <summary>Sets the stub of IUsuarioService.ObterPeloLogin(String login)</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Services.Fakes.StubIUsuarioService.ObterPerfilDeAcesso">
+            <summary>Sets the stub of IUsuarioService.ObterPerfilDeAcesso()</summary>
+        </member>
+        <member name="F:Sample.Kadastro.Dominio.Services.Fakes.StubIUsuarioService.SalvarUsuario">
+            <summary>Sets the stub of IUsuarioService.Salvar(Usuario item)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.StubIUsuarioService.skd::Sample#Kadastro#Dominio#Services#IUsuarioService#Autenticar(System.String,System.String)">
+            <summary>Sets the stub of IUsuarioService.Autenticar(String login, String senha)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.StubIUsuarioService.skd::Sample#Kadastro#Dominio#Services#IUsuarioService#Excluir(System.Int32)">
+            <summary>Sets the stub of IUsuarioService.Excluir(Int32 id)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.StubIUsuarioService.skd::Sample#Kadastro#Dominio#Services#IUsuarioService#Obter(System.Int32)">
+            <summary>Sets the stub of IUsuarioService.Obter(Int32 id)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.StubIUsuarioService.skd::Sample#Kadastro#Dominio#Services#IUsuarioService#Obter">
+            <summary>Sets the stub of IUsuarioService.Obter()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.StubIUsuarioService.skd::Sample#Kadastro#Dominio#Services#IUsuarioService#ObterPeloLogin(System.String)">
+            <summary>Sets the stub of IUsuarioService.ObterPeloLogin(String login)</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.StubIUsuarioService.skd::Sample#Kadastro#Dominio#Services#IUsuarioService#ObterPerfilDeAcesso">
+            <summary>Sets the stub of IUsuarioService.ObterPerfilDeAcesso()</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.StubIUsuarioService.skd::Sample#Kadastro#Dominio#Services#IUsuarioService#Salvar(Sample.Kadastro.Dominio.Entities.Usuario)">
+            <summary>Sets the stub of IUsuarioService.Salvar(Usuario item)</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Services.Fakes.StubTarefaService">
+            <summary>Stub type of Sample.Kadastro.Dominio.Services.TarefaService</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.StubTarefaService.#ctor(Sample.Kadastro.Dominio.Repositories.ITarefaRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.StubTarefaService.InitializeStub">
+            <summary>Initializes a new instance of type StubTarefaService</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.StubTarefaService.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.StubTarefaService.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.StubTarefaService.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Sample.Kadastro.Dominio.Services.Fakes.StubUsuarioService">
+            <summary>Stub type of Sample.Kadastro.Dominio.Services.UsuarioService</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.StubUsuarioService.#ctor(Sample.Kadastro.Dominio.Repositories.IUsuarioRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Sample.Kadastro.Dominio.Services.Fakes.StubUsuarioService.InitializeStub">
+            <summary>Initializes a new instance of type StubUsuarioService</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.StubUsuarioService.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.StubUsuarioService.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Sample.Kadastro.Dominio.Services.Fakes.StubUsuarioService.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

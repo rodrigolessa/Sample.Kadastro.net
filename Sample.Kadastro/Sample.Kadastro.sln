@@ -2,6 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Gerenciamento de Dependências", "0 - Gerenciamento de Dependências", "{99ADA083-5B33-404C-9FA4-B5B208C6854F}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Arquitetura e Design", "1 - Arquitetura e Design", "{4CB3141E-74E8-493B-8435-5DE275ECB9FF}"
 EndProject

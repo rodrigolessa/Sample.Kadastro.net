@@ -1,0 +1,32 @@
+﻿/* Styles for basic forms
+-----------------------------------------------------------*/
+
+textarea {
+    min-height: 75px;
+}
+
+input + .maxlength,
+textarea + .maxlength {
+    position: relative;
+    top: 5px;
+}
+
+.counter-container {
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+}
+
+.counter-container .header {
+    font-weight: bold;
+    margin: 0;
+}
+
+.counter-container .header,
+.counter-container .maxlength {
+    margin-bottom: 1em;
+}
+
+.counter-container .maxlength:last-child {
+    margin-bottom: 0;
+}
